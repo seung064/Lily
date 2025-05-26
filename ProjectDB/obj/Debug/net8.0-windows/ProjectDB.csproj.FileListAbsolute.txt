@@ -17,3 +17,4 @@ C:\Users\gli05\Desktop\bootcamp\CS_Project_MiniGame\ProjectDB\ProjectDB\obj\Debu
 C:\Users\gli05\Desktop\bootcamp\CS_Project_MiniGame\ProjectDB\ProjectDB\obj\Debug\net8.0-windows\ProjectDB.pdb
 C:\Users\gli05\Desktop\bootcamp\CS_Project_MiniGame\ProjectDB\ProjectDB\obj\Debug\net8.0-windows\ProjectDB.genruntimeconfig.cache
 C:\Users\gli05\Desktop\bootcamp\CS_Project_MiniGame\ProjectDB\ProjectDB\obj\Debug\net8.0-windows\ref\ProjectDB.dll
+C:\Users\gli05\Desktop\bootcamp\CS_Project_MiniGame\ProjectDB\ProjectDB\obj\Debug\net8.0-windows\ProjectDB.sourcelink.json
