@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\",
+  "WorkspaceRootPath": "C:\\Users\\o\\Desktop\\Lily\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|c:\\users\\gli05\\desktop\\bootcamp\\cs_project_minigame\\projectdb\\project_lily_wpf_ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|c:\\users\\o\\desktop\\lily\\project_lily_wpf_ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|solutionrelative:project_lily_wpf_ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|c:\\users\\gli05\\desktop\\bootcamp\\cs_project_minigame\\projectdb\\project_lily_wpf_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|c:\\users\\o\\desktop\\lily\\project_lily_wpf_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CBFC575-B3E4-4B7D-929A-8F58B8840048}|Project_Lily_WPF_UI\\Project_Lily_WPF_UI.csproj|solutionrelative:project_lily_wpf_ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D1F32C2-E068-42C3-B7B2-8EAC05D60AA6}|ProjectDB\\ProjectDB.csproj|c:\\users\\gli05\\desktop\\bootcamp\\cs_project_minigame\\projectdb\\projectdb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D1F32C2-E068-42C3-B7B2-8EAC05D60AA6}|ProjectDB\\ProjectDB.csproj|c:\\users\\o\\desktop\\lily\\projectdb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D1F32C2-E068-42C3-B7B2-8EAC05D60AA6}|ProjectDB\\ProjectDB.csproj|solutionrelative:projectdb\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,19 +22,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\Project_Lily_WPF_UI\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\o\\Desktop\\Lily\\Project_Lily_WPF_UI\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Project_Lily_WPF_UI\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\Project_Lily_WPF_UI\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\o\\Desktop\\Lily\\Project_Lily_WPF_UI\\MainWindow.xaml",
               "RelativeToolTip": "Project_Lily_WPF_UI\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-05-26T08:40:28.469Z",
@@ -44,27 +52,25 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\Project_Lily_WPF_UI\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\o\\Desktop\\Lily\\Project_Lily_WPF_UI\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily_WPF_UI\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\Project_Lily_WPF_UI\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\o\\Desktop\\Lily\\Project_Lily_WPF_UI\\MainWindow.xaml.cs",
               "RelativeToolTip": "Project_Lily_WPF_UI\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAhwBkAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T08:40:28.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T08:40:28.201Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ProjectDB\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\Data\\AppDbContext.cs",
               "RelativeToolTip": "ProjectDB\\Data\\AppDbContext.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T13:19:36.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T13:19:36.73Z"
             }
           ]
         }

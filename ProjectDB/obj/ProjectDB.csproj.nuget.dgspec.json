@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\ProjectDB.csproj": {}
+    "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\ProjectDB.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\ProjectDB.csproj": {
+    "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\ProjectDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\ProjectDB.csproj",
+        "projectUniqueName": "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\ProjectDB.csproj",
         "projectName": "ProjectDB",
-        "projectPath": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\ProjectDB.csproj",
-        "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gli05\\Desktop\\bootcamp\\CS_Project_MiniGame\\ProjectDB\\ProjectDB\\obj\\",
+        "projectPath": "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\ProjectDB.csproj",
+        "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\o\\Desktop\\Lily\\ProjectDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gli05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -86,7 +86,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
