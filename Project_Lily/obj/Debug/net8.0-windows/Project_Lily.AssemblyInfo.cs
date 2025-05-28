@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Project_Lily")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cab8eeb37ad91e5f6f3c3615f2107f0513e597d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Project_Lily")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Project_Lily")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

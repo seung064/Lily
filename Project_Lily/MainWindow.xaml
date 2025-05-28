@@ -13,7 +13,7 @@
             <TabItem Header="행성" Foreground="Red" Background="#06223c">
                 <Grid>
                     <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->
-                    <GroupBox Header="Aquarius" Margin="10,10,10,200">
+                    <GroupBox Header="Aquarius" Margin="10,10,10,200" FontSize="20">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="180"/>
@@ -24,9 +24,9 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBlock Text="릴리" Margin="10,5,10,10"/>
-                            <Button Content="X" Width="20" Height="20" Margin="10,0,10,10" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                            <Separator Margin="10,0,10,130" Grid.ColumnSpan="2" />
+                            <TextBlock Text="릴리" Margin="10,5,10,10" FontSize="20"/>
+                            <Button Content="X" Width="20" Height="20" Margin="0,10,10,0" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                            <Separator Margin="10,10,10,130" Grid.ColumnSpan="2" />
                             <Image x:Name="imagaeTest" Width="140" Height="140" Grid.Row="0" Grid.Column="0" Margin="10,20,0,0"/>
                             <TextBlock Text="1111111111" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Margin="10"/>
                             <TextBlock Text="보유 재료" Foreground="White" FontSize="15" Grid.Row="1" Grid.Column="0" Margin="10"/>
@@ -76,7 +76,7 @@
 
             <TabItem Header="조합" Foreground="Red" Background="#06223c">
                 <Grid>
-                    
+
                     <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->
                     <GroupBox Margin="10,10,10,250">
                         <Grid Margin="10">
@@ -91,7 +91,7 @@
 
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                
+
                                 <ColumnDefinition Width="40"/>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="40"/>
@@ -118,7 +118,7 @@
                             </Button>
                             <Button x:Name="Combination" Content="조합" Width="60" Height="30" Grid.Row="6" Grid.Column="3"/>
                             <TextBlock Text="(a/b)" Grid.Row="5" Grid.Column="3" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
-                            
+
                         </Grid>
                     </GroupBox>
 
@@ -190,7 +190,7 @@
                             <Separator Margin="10,10,10,10" Grid.ColumnSpan="4" Grid.Row="0"/>
                             <Image Source="pack://application:,,,/Assets/Trash.jpg" Grid.Column="0" Grid.Row="1"/>
                             <TextBlock Text="화염정광" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Grid.Row="1" Grid.Column="2" Text="설명설명설명설명설명설명설명설명설명설명설명설명설명설명설명"/>
+                            <TextBlock Grid.Row="1" Grid.Column="2" Text="- 설명"/>
 
                         </Grid>
                     </GroupBox>
@@ -216,14 +216,14 @@
                             <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="2" Grid.Column="0" />
                             <TextBlock Text="재료3" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            
+
                             <TextBlock Text="재료2" Grid.Row="1" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                           
+
                             <TextBlock Text="재료3" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-                            
 
-                           
+
+
 
                         </Grid>
                     </GroupBox>
