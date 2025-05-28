@@ -138,22 +138,18 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="0" Grid.Column="0" />
-                            <TextBlock Text="재료1" Grid.Row="0" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Text="조합된 물품" Margin="10,2,0,0" FontSize="18" Grid.ColumnSpan="2"/>
+                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                            <Separator Margin="10,10,10,0" Grid.ColumnSpan="4" />
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="1" Grid.Column="0" />
                             <TextBlock Text="재료2" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="2" Grid.Column="0" />
                             <TextBlock Text="재료3" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="0" Grid.Column="2" />
-                            <TextBlock Text="재료1" Grid.Row="0" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="1" Grid.Column="2" />
                             <TextBlock Text="재료2" Grid.Row="1" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="2" Grid.Column="2" />
                             <TextBlock Text="재료3" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                            <TextBlock Text="x" Margin="0,0,0,0" Foreground="White" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="y" Margin="0,0,0,0" Foreground="White" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="z" Margin="0,0,0,0" Foreground="White" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <TextBlock Text="(a/b)" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
 
                             <Button x:Name="Trash1" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30">
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
