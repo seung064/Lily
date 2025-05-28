@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Project_Lily/1.0.0": {
         "dependencies": {
-          "Project_Lily_DB2": "1.0.0"
+          "Project_Lily_DB": "1.0.0"
         },
         "runtime": {
           "Project_Lily.dll": {}
@@ -393,13 +393,13 @@
           }
         }
       },
-      "Project_Lily_DB2/1.0.0": {
+      "Project_Lily_DB/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.5",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
         },
         "runtime": {
-          "Project_Lily_DB2.dll": {
+          "Project_Lily_DB.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -595,7 +595,7 @@
       "path": "system.text.json/9.0.5",
       "hashPath": "system.text.json.9.0.5.nupkg.sha512"
     },
-    "Project_Lily_DB2/1.0.0": {
+    "Project_Lily_DB/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

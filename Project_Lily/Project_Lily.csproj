@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Project_Lily_DB2\Project_Lily_DB2.csproj" />
+    <ProjectReference Include="..\Project_Lily_DB\Project_Lily_DB.csproj" />
   </ItemGroup>
 
   <ItemGroup>

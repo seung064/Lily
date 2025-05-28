@@ -528,7 +528,7 @@
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
       },
-      "Project_Lily_DB2/1.0.0": {
+      "Project_Lily_DB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -536,11 +536,14 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.5"
         },
         "compile": {
-          "bin/placeholder/Project_Lily_DB2.dll": {}
+          "bin/placeholder/Project_Lily_DB.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Project_Lily_DB2.dll": {}
-        }
+          "bin/placeholder/Project_Lily_DB.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -1270,35 +1273,35 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Project_Lily_DB2/1.0.0": {
+    "Project_Lily_DB/1.0.0": {
       "type": "project",
-      "path": "../Project_Lily_DB2/Project_Lily_DB2.csproj",
-      "msbuildProject": "../Project_Lily_DB2/Project_Lily_DB2.csproj"
+      "path": "../Project_Lily_DB/Project_Lily_DB.csproj",
+      "msbuildProject": "../Project_Lily_DB/Project_Lily_DB.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Project_Lily_DB2 >= 1.0.0"
+      "Project_Lily_DB >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gli05\\.nuget\\packages\\": {},
+    "C:\\Users\\frank\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\Project_Lily\\Project_Lily.csproj",
+      "projectUniqueName": "C:\\Users\\frank\\Source\\Repos\\Lily\\Project_Lily\\Project_Lily.csproj",
       "projectName": "Project_Lily",
-      "projectPath": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\Project_Lily\\Project_Lily.csproj",
-      "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\Project_Lily\\obj\\",
+      "projectPath": "C:\\Users\\frank\\Source\\Repos\\Lily\\Project_Lily\\Project_Lily.csproj",
+      "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\frank\\Source\\Repos\\Lily\\Project_Lily\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gli05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1313,8 +1316,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\Project_Lily_DB2\\Project_Lily_DB2.csproj": {
-              "projectPath": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\Project_Lily_DB2\\Project_Lily_DB2.csproj"
+            "C:\\Users\\frank\\Source\\Repos\\Lily\\Project_Lily_DB\\Project_Lily_DB.csproj": {
+              "projectPath": "C:\\Users\\frank\\Source\\Repos\\Lily\\Project_Lily_DB\\Project_Lily_DB.csproj"
             }
           }
         }
@@ -1353,7 +1356,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
