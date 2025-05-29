@@ -24,9 +24,6 @@
     <None Remove="Assets\Trash.jpg" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Project_Lily_DB2\Project_Lily_DB2.csproj" />
-  </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\Aether Core.png">
@@ -68,6 +65,13 @@
     <Resource Include="Assets\Trash.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Update="UserControl1 - Copy %282%29.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>
