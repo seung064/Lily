@@ -2,22 +2,22 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-    <Compile Update="UserControl1.xaml.cs">
+    <Compile Update="View\UserControl1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl2.xaml.cs">
+    <Compile Update="View\UserControl2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl3.xaml.cs">
+    <Compile Update="View\UserControl3.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl4.xaml.cs">
+    <Compile Update="View\UserControl4.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl5.xaml.cs">
+    <Compile Update="View\UserControl5.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl6.xaml.cs">
+    <Compile Update="View\UserControl6.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

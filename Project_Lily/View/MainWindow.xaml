@@ -8,7 +8,6 @@
         Title="MainWindow" Height="800" Width="500">
 
     <Grid>
-        <ContentControl x:Name="MainControl" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <Button x:Name="Button1" Width="50" Height="50" Click="Button1_Click_1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <ContentControl Content="{Binding currentPage}"/>
     </Grid>
 </Window>

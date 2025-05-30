@@ -5063,11 +5063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\DB\\DB.csproj",
+      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\Project\\DB\\DB.csproj",
       "projectName": "DB",
-      "projectPath": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\DB\\DB.csproj",
+      "projectPath": "C:\\Users\\gli05\\Desktop\\Project\\DB\\DB.csproj",
       "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gli05\\Desktop\\Lily\\Project_Lily\\DB\\obj\\",
+      "outputPath": "C:\\Users\\gli05\\Desktop\\Project\\DB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

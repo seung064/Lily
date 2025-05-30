@@ -20,11 +20,4 @@ public partial class MainWindow : Window
     {
         InitializeComponent();
     }
-
-
-    private void Button1_Click_1(object sender, RoutedEventArgs e)
-    {
-        MainControl.Content = new UserControl1();
-
-    }
 }

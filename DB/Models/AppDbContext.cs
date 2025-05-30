@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using Microsoft.EntityFrameworkCore;
-using Project_Lily_DB.Models; // 네임스페이스와 일치 (끌어오기)
+using DB.Models; // 네임스페이스와 일치 (끌어오기)
 
 
-namespace Project_Lily_DB.Models
+namespace DB.Models
 {
     //EF Core가 DB를 관리할 수 있게 해주는 클래스
     public class AppDbContext : DbContext

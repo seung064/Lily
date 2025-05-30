@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Lily_DB.Models
+namespace DB.Models
 {
     public class Ingredient
     {
