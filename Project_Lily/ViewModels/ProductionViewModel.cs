@@ -9,75 +9,147 @@ using System.Windows.Input;
 using Project_Lily.Commands;
 using Project_Lily.Models;
 using DB.Models; // 네임스페이스와 일치 (끌어오기)
+using System.Windows.Controls;
+using CommunityToolkit.Mvvm.ComponentModel;  // ObservableObject 클래스 사용
+using CommunityToolkit.Mvvm.Input;
+using System.Windows; // RelayCommand 클래스 사용
 
 namespace Project_Lily.ViewModels
 {
-    public class ProductionViewModel : INotifyPropertyChanged
+    public partial class ProductionViewModel : ObservableObject
     {
-        // 생산 목록 (Model 객체들 담는 리스트)
-        public ObservableCollection<ProductionItem> ProductionList { get; } = new ObservableCollection<ProductionItem>();
+        
+        [ObservableProperty]// 자동으로 public bool ProductionItemSelected { get; set; } 생성됨
+        private bool production1ItemSelected; // 생산 아이템 선택 여부 
 
-        private int progress;
-        public int Progress
+        [ObservableProperty]
+        private bool production1Started;
+
+        [ObservableProperty]
+        private int production1Progress;
+
+        [ObservableProperty]
+        private int production1RemainingTime;
+
+        [ObservableProperty]
+        private bool production2ItemSelected;
+
+        [ObservableProperty]
+        private bool production2Started;
+
+        [ObservableProperty]
+        private int production2Progress;
+
+        [ObservableProperty]
+        private int production2RemainingTime;
+
+        [ObservableProperty]
+        private bool production3ItemSelected;
+
+        [ObservableProperty]
+        private bool production3Started;
+
+        [ObservableProperty]
+        private int production3Progress;
+
+        [ObservableProperty]
+        private int production3RemainingTime;
+
+        [ObservableProperty]
+        private ProductionItem selectedProductionItem;
+
+
+
+        public ObservableCollection<ProductionItem> ProductionItems { get; set; } = new(); // 생산 아이템들을 담는 ObservableCollection
+
+
+
+        public ProductionViewModel() // 생성 아이템
         {
-            get => progress;
-            set
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTimer = TimeSpan.FromSeconds(60) });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTimer = TimeSpan.FromSeconds(30) });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTimer = TimeSpan.FromSeconds(45) });
+        }
+
+
+
+        [RelayCommand]
+        private async Task Production() // 생산 버튼 클릭 시 실행되는 메서드
+        {
+            if (Production1ItemSelected && !Production1Started)
             {
-                if (progress != value)
+                Production1ItemSelected = false;
+                _= StartProduction(1, ProductionItems[0]); // _= 는 비동기로 처리가능
+            }
+
+            if (Production2ItemSelected && !Production2Started)
+            {
+                Production2ItemSelected = false;
+                _= StartProduction(2, ProductionItems[1]);
+            }       
+   
+            if (Production3ItemSelected && !Production3Started)
+            {
+                Production3ItemSelected = false;
+                _= StartProduction(3, ProductionItems[2]);
+            }
+        }
+
+
+        // 생산 메서드 / 생산 라인으로 구분하여 비동기로 처리
+        private async Task StartProduction(int lineNumber, ProductionItem item)
+        {
+            int totalTime = (int)item.ProductionTimer.TotalSeconds;
+
+
+
+            for (int i = 0; i < totalTime; i++)
+            {
+                await Task.Delay(1000);
+                int progress = (i + 1) * 100 / totalTime; // 프로그레스바 진행률
+                int remainingTime = totalTime - (i + 1); // 남은 시간
+
+                // await으로 1초마다 업데이트
+                switch (lineNumber)
                 {
-                    progress = value;
-                    OnPropertyChanged(nameof(Progress));
+                    case 1:
+                        Production1Progress = progress;
+                        Production1RemainingTime = remainingTime;
+                        break;
+
+                    case 2:
+                        Production2Progress = progress;
+                        Production2RemainingTime = remainingTime;
+                        break;
+
+                    case 3:
+                        Production3Progress = progress;
+                        Production3RemainingTime = remainingTime;
+                        break;
                 }
             }
-        }
-
-        public ICommand StartProductionCommand { get; }
-
-        public ProductionViewModel()
-        {
-            StartProductionCommand = new RelayCommand(async _ => await StartProductionAsync(), null);
-        }
-
-        // 생산 시작 함수
-
-        private async Task StartProductionAsync()
-        {
-            // 새 생산 항목 생성 (시간 기록 포함)
-            var newItem = new ProductionItem
+            
+            // 생산 완료시 초기화
+            switch (lineNumber)
             {
-                Timer = TimeSpan.FromSeconds(50),
-            };
+                case 1:
+                    Production1Started = false;
+                    Production1Progress = 0;
+                    Production1RemainingTime = 0;
+                    break;
 
-            // 리스트에 추가 (UI에 자동 반영)
-            ProductionList.Add(newItem);
+                case 2:
+                    Production2Started = false;
+                    Production2Progress = 0;
+                    Production2RemainingTime = 0;
+                    break;
 
-            Progress = 0;
-            for (int i = 0; i <= 100; i += 10)
-            {
-                Progress = i;
-                await Task.Delay(500);
+                case 3:
+                    Production3Started = false;
+                    Production3Progress = 0;
+                    Production3RemainingTime = 0;
+                    break;
             }
         }
-
-
-
-        private TimeSpan _timer;
-        public TimeSpan Timer
-        {
-            get => _timer;
-            set
-            {
-                if (_timer != value)
-                {
-                    _timer = value;
-                    OnPropertyChanged(nameof(Timer));
-                }
-            }
-        }
-
-
-        public event PropertyChangedEventHandler? PropertyChanged;
-        protected void OnPropertyChanged(string name) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 }

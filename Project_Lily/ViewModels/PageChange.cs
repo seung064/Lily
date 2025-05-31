@@ -17,12 +17,6 @@ namespace Project_Lily.ViewModels
 {
     public partial class PageChangeViewModel : ObservableObject // ViewModelBase 클래스 / 속성과 UI 사이의 데이터 바인딩 자동 동작 / 반드시 partial class
     {
-        // 생산 목록 (Model 객체들 담는 리스트)
-        // public ObservableCollection<Page> pageNumber { get; set; } = new(); // Page 객체들을 담은 리스트를 뷰와 바인딩할 때 사용하는 컬렉션
-        //리스트박스나 탭 컨트롤에 여러 페이지를 나열하거나 선택
-
-
-
         [ObservableProperty]
         private UserControl currentPage;
 

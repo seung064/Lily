@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Project_Lily.ViewModels;
 
 namespace Project_Lily
 {
@@ -23,6 +24,7 @@ namespace Project_Lily
         public UserControl2()
         {
             InitializeComponent();
+            this.DataContext = new ProductionViewModel();  // 뷰모델 연결
         }
     }
 }

@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_Lily"
         mc:Ignorable="d"
+                     Background="#06223c"
         Title="MainWindow" Height="800" Width="500">
 
+
     <Grid>
-        <ContentControl Content="{Binding currentPage}"/>
+        <!-- 테스트용 임시 주석 ContentControl Content="{Binding currentPage}"/-->
+        <local:UserControl2 /><!-- 테스트 유저컨트롤 -->
     </Grid>
 </Window>
