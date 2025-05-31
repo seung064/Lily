@@ -11,7 +11,7 @@
     <Grid>
         <Grid>
         <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->
-            <GroupBox Header="Sylphy" Margin="10,10,10,10" FontSize="20">
+            <GroupBox Header="Sylphy" Foreground="White" Margin="10,10,10,10" FontSize="20">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>

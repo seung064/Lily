@@ -5,8 +5,118 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Project_Lily"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             Background="#06223c"
+             d:DesignHeight="800" d:DesignWidth="500">
+
     <Grid>
-            
+        <Grid>
+            <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->
+            <GroupBox Header="Sylphy" Margin="10,10,10,10" FontSize="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Text="UserControl3" Foreground="White"  Margin="10,0,0,0" FontSize="20" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
+                    <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+
+                    <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0" />
+                    <Image Source="/Assets/Lily.png" Width="140" Height="140" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+                    <TextBlock Text="1111111111" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="10"/>
+
+
+                    <TextBlock Text="보유 재료" Foreground="White" FontSize="20" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="4" VerticalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="5" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="재료1" Grid.Row="5" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="5" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="6" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="재료2" Grid.Row="6" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="6" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="7" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="재료3" Grid.Row="7" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="7" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="5" Grid.Column="3" />
+                    <TextBlock Text="재료1" Grid.Row="5" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="5" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="6" Grid.Column="3" />
+                    <TextBlock Text="재료2" Grid.Row="6" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="6" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="7" Grid.Column="3" />
+                    <TextBlock Text="재료3" Grid.Row="7" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="7" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <TextBlock Text="(a/6)" Grid.Column="6" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+                    <Separator Grid.ColumnSpan="6" Grid.Row="9" Margin="10"/>
+
+                    <TextBlock Text="생산 현황" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <Separator Grid.ColumnSpan="6" Grid.Row="10" Margin="10,20,10,0"/>
+
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="11" Grid.Column="0" />
+                    <TextBlock Text="재료3" Grid.Row="11" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="11" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="12" Grid.Column="0" />
+                    <TextBlock Text="재료3" Grid.Row="12" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="12" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="13" Grid.Column="0" />
+                    <TextBlock Text="재료3" Grid.Row="13" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="13" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="13" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+                    <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="14" Grid.Column="0" />
+                    <TextBlock Text="재료3" Grid.Row="14" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Text="초" Grid.Row="14" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3"/>
+
+                    <TextBlock Text="(2/4)" Grid.Column="6" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <!-- 타이머
+                    <TextBlock Text="x" Margin="0,0,0,0" Foreground="White" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="y" Margin="0,0,0,0" Foreground="White" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <TextBlock Text="z" Margin="0,0,0,0" Foreground="White" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" /-->
+
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+
+        <!-- 끝 -->
+
+
     </Grid>
 </UserControl>
