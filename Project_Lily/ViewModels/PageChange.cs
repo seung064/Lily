@@ -11,6 +11,7 @@ using Project_Lily.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.Windows.Controls;
+using Project_Lily.View;
 
 
 namespace Project_Lily.ViewModels
@@ -45,6 +46,9 @@ namespace Project_Lily.ViewModels
                     break;
                 case "UserControl6":
                     currentPage = new UserControl6();
+                    break;
+                case "UserControl7":
+                    currentPage = new UserControl7();
                     break;
             }
         }

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CommunityToolkit.Mvvm.ComponentModel;
 
 
 namespace Project_Lily.Commands
 {
 
-    public class RelayCommand : ICommand
+    public class RelayCommand : ObservableObject
     {
 
 
@@ -27,11 +28,12 @@ namespace Project_Lily.Commands
 
         public void Execute(object? parameter) => execute(parameter);
 
-
+        /*
         public event EventHandler? CanExecuteChanged  // UI에 변경사항 알림
         {
             add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
+        */
     }
 }

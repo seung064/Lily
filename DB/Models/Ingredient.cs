@@ -18,9 +18,5 @@ namespace DB.Models
 
         public string Description_I { get; set; }
 
-
-        [ForeignKey("Country")]
-        public int CountryNum { get; set; }
-        public Country Country { get; set; }
     }
 }

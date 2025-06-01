@@ -1,9 +1,9 @@
-﻿<Window x:Class="Project_Lily.MainWindow"
+﻿<Window x:Class="Project_Lily.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Project_Lily"
+        xmlns:local="clr-namespace:Project_Lily.View"
         mc:Ignorable="d"
                      Background="#06223c"
         Title="MainWindow" Height="800" Width="500">
@@ -11,6 +11,6 @@
 
     <Grid>
         <!-- 테스트용 임시 주석 ContentControl Content="{Binding currentPage}"/-->
-        <local:UserControl2 /><!-- 테스트 유저컨트롤 -->
+        <local:UserControl2/><!-- 테스트 유저컨트롤 -->
     </Grid>
 </Window>

@@ -181,3 +181,5 @@ namespace DB.Models
 // dotnet ef database update - DB 업데이트
 // dotnet ef migrations list - 생성된 마이그레이션 목록 확인
 // dotnet ef migrations add InitCreate - 마이그레이션 생성
+
+

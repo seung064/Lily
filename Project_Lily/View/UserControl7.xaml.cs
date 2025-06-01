@@ -17,11 +17,11 @@ using Project_Lily.ViewModels;
 namespace Project_Lily.View
 {
     /// <summary>
-    /// Interaction logic for UserControl2.xaml
+    /// Interaction logic for UserControl7.xaml
     /// </summary>
-    public partial class UserControl2 : UserControl
+    public partial class UserControl7 : UserControl
     {
-        public UserControl2()
+        public UserControl7()
         {
             InitializeComponent();
             this.DataContext = new TheranosProductionViewModel();  // 뷰모델 연결

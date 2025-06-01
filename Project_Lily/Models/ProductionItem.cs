@@ -25,9 +25,15 @@ namespace Project_Lily.Models
         private TimeSpan productionTimer; // 생산 시간
 
         [ObservableProperty]
-        private TimeSpan expirationTime; // 유통기한
+        private TimeSpan expirationTimer = TimeSpan.Zero; // 유통기한
 
         [ObservableProperty]
         private TimeSpan ramainingTime; // 남은 시간
+
+        [ObservableProperty]
+        private int quantity; // 생산 아이템 수량
+
+        [ObservableProperty]
+        private bool isExpired = false;
     }
 }
