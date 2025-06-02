@@ -25,7 +25,7 @@ namespace Project_Lily.Models
         private TimeSpan productionTimer; // 생산 시간
 
         [ObservableProperty]
-        private TimeSpan expirationTimer = TimeSpan.Zero; // 유통기한
+        private TimeSpan expirationTime; // 유통기한
 
         [ObservableProperty]
         private TimeSpan ramainingTime; // 남은 시간

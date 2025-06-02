@@ -65,5 +65,30 @@ namespace Project_Lily.Models
                 conn.Close();
             }
         }
+
+        public static void DeleteProduction(string ProductionItemName, DateTime ProducedAt, int ProductionItemCount)
+        {
+            using (var conn = new SQLiteConnection($"Data Source={ProductionItemList};"))
+            {
+                conn.Open();
+
+                string deleteQuery = @"
+                DELETE FROM ProductionItemDB
+                WHERE ProductionItemName = @ProductionItemName  
+                AND ProducedAt = @ProducedAt
+                AND ProductionItemCount = @ProductionItemCount;";
+
+                using (var cmd = new SQLiteCommand(deleteQuery, conn))
+                {
+                    cmd.Parameters.AddWithValue("@ProductionItemName", ProductionItemName);
+                    cmd.Parameters.AddWithValue("@ProducedAt", ProducedAt.ToString("yyyy-MM-dd HH:mm:ss"));
+                    cmd.Parameters.AddWithValue("@ProductionItemCount", ProductionItemCount);
+                    cmd.ExecuteNonQuery();
+                }
+
+                conn.Close();
+
+            }
+        }
     }
 }
