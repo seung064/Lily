@@ -8,23 +8,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Project_Lily.LogInUI;
 
 namespace Project_Lily;
 
 /// <summary>
 /// Interaction logic for MainWindow.xaml
 /// </summary>
-public partial class MainWindow : Window
-{
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+            
+
+            DatabaseInitializer.CreateDatabaseAndTable(); // DB 초기화
+            DatabaseInitializer.InsertAdminAccount(); // 관리자 ID 초기화
+
+            MainContent.Content = new Login(this); // 처음에는 로그인 페이지로 시작
+        }
+        public void Navigate(UserControl nextControl)
+        {
+            MainContent.Content = nextControl;
+        }
     }
-
-
-    private void Button1_Click_1(object sender, RoutedEventArgs e)
-    {
-        MainControl.Content = new UserControl1();
-
-    }
-}

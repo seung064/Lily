@@ -2,6 +2,18 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="LogInUI\AdminLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogInUI\FindPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogInUI\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LogInUI\SignUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControl1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

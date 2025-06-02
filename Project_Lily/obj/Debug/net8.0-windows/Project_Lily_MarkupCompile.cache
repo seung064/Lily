@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\gli05\Desktop\Lily\Project_Lily\Project_Lily\obj\Debug\net8.0-windows\
+C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\
 Project_Lily
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\gli05\Desktop\Lily\Project_Lily\Project_Lily\App.xaml
-7-937633275
+C:\Users\frank\source\repos\Lily\Project_Lily\App.xaml
+11-755645636
 
-10-208959284
-198-344842731
-MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;UserControl5.xaml;UserControl6.xaml;
+17-1950323269
+203-1459086917
+LogInUI\AdminLogin.xaml;LogInUI\FindPassword.xaml;LogInUI\Login.xaml;LogInUI\SignUp.xaml;MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;UserControl5.xaml;UserControl6.xaml;
 
 False
 

@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Project_Lily.LogInUI.AdminLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Project_Lily.LogInUI"
+             mc:Ignorable="d"
+             Background="#06223c"
+             d:DesignHeight="800" d:DesignWidth="500">
+    <Grid>
+        <Grid Margin="20">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>  <!-- 제목 -->
+        <RowDefinition Height="*"/>     <!-- DataGrid -->
+        <RowDefinition Height="Auto"/>  <!-- 삭제 버튼 -->
+        <RowDefinition Height="Auto"/>  <!-- 뒤로 가기 버튼 -->
+    </Grid.RowDefinitions>
+
+    <!-- 제목 -->
+    <Grid>
+        <TextBlock Text="유저 목록" FontSize="24" FontWeight="Bold" Foreground="White" Margin="0,0,0,20" Grid.Row="0"/>
+        <Button Content="!"
+                Grid.Row="0"
+                Margin="0,10,0,0"
+                Height="20"
+                Click="ResetUsersTable_Click"
+                Width="20"
+                HorizontalAlignment="Right"/>
+     </Grid>
+            
+            
+    
+    
+
+    <!-- 유저 목록 테이블 -->
+    <DataGrid x:Name="UserDataGrid"
+              Grid.Row="1"
+              AutoGenerateColumns="False"
+              CanUserAddRows="False"
+              IsReadOnly="True"
+              SelectionMode="Extended"
+              SelectionUnit="FullRow"
+              Margin="0,10,0,0">
+
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto"/>
+            <DataGridTextColumn Header="이름" Binding="{Binding Name}" Width="Auto"/>
+                    <DataGridTextColumn Header="아이디" Binding="{Binding UserId}" Width="Auto"/>
+                    <DataGridTextColumn Header="생년월일" Binding="{Binding Birth}" Width="Auto"/>
+                    <DataGridTextColumn Header="사용자명" Binding="{Binding Username}" Width="Auto"/>
+                    <DataGridTextColumn Header="이메일" Binding="{Binding Email}" Width="Auto"/>
+                    <DataGridTextColumn Header="유형" Binding="{Binding UserType}" Width="Auto"/>
+        </DataGrid.Columns>
+    </DataGrid>
+
+    <!-- 삭제 버튼 -->
+    <Button Content="선택된 사용자 삭제"
+            Grid.Row="2"
+            Margin="0,10,0,0"
+            Height="40"
+            Click="DeleteUserButton_Click"/>
+
+    <!-- 뒤로 가기 버튼 -->
+    <Button Content="뒤로 가기"
+            Grid.Row="3"
+            Margin="0,10,0,0"
+            Height="40"
+            Click="BackButton_Click"
+            VerticalAlignment="Bottom"/>
+        </Grid>
+
+    </Grid>
+</UserControl>
