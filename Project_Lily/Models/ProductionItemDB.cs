@@ -43,6 +43,7 @@ namespace Project_Lily.Models
             }
         }
 
+
         public static void InsertProduction(string ProductionItemName, DateTime ProducedAt, int ProductionItemCount)
         {
 
@@ -66,7 +67,8 @@ namespace Project_Lily.Models
             }
         }
 
-        public static void DeleteProduction(string ProductionItemName, DateTime ProducedAt, int ProductionItemCount)
+
+        public static void DeleteProduction(string ProductionItemName)
         {
             using (var conn = new SQLiteConnection($"Data Source={ProductionItemList};"))
             {
@@ -74,20 +76,15 @@ namespace Project_Lily.Models
 
                 string deleteQuery = @"
                 DELETE FROM ProductionItemDB
-                WHERE ProductionItemName = @ProductionItemName  
-                AND ProducedAt = @ProducedAt
-                AND ProductionItemCount = @ProductionItemCount;";
+                WHERE ProductionItemName = @ProductionItemName;";
 
                 using (var cmd = new SQLiteCommand(deleteQuery, conn))
                 {
                     cmd.Parameters.AddWithValue("@ProductionItemName", ProductionItemName);
-                    cmd.Parameters.AddWithValue("@ProducedAt", ProducedAt.ToString("yyyy-MM-dd HH:mm:ss"));
-                    cmd.Parameters.AddWithValue("@ProductionItemCount", ProductionItemCount);
                     cmd.ExecuteNonQuery();
                 }
 
                 conn.Close();
-
             }
         }
     }

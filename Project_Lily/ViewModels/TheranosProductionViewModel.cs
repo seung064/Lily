@@ -78,25 +78,27 @@ namespace Project_Lily.ViewModels
         public ObservableCollection<ProductionItem> ProductionItems { get; set; } = new(); // 생산 아이템들을 담는 ObservableCollection
 
 
-        /* 본체 !!!! 지우지 말것
+        /*
+        // 본체 !!!! 지우지 말것
         public TheranosProductionViewModel() // 생성 아이템
         {
             ProductionItemDB.CreateDatabaseAndTable(); // DB 생성 코드 먼저 실행        
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(30), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(60), Quantity=0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(45), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(200), ProductionTimer = TimeSpan.FromSeconds(30), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(200), ProductionTimer = TimeSpan.FromSeconds(60), Quantity=0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(200), ProductionTimer = TimeSpan.FromSeconds(45), Quantity = 0 });
         }
         */
+        
         
         //테스트용
         public TheranosProductionViewModel() // 생성 아이템
         {
             ProductionItemDB.CreateDatabaseAndTable(); // DB 생성 코드 먼저 실행        
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(10), ProductionTimer = TimeSpan.FromSeconds(10), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(10), ProductionTimer = TimeSpan.FromSeconds(5), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(10), ProductionTimer = TimeSpan.FromSeconds(15), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTimer = TimeSpan.FromSeconds(10), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(15), ProductionTimer = TimeSpan.FromSeconds(5), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTimer = TimeSpan.FromSeconds(15), Quantity = 0 });
         }
-
+        
 
 
         [RelayCommand]
@@ -202,7 +204,7 @@ namespace Project_Lily.ViewModels
         
         private async void StartExpirationTimer(ProductionItem item, int itemIndex, int lineNumber)
         {
-            item.ExpirationTime = TimeSpan.FromSeconds(10);
+            item.ExpirationTime = TimeSpan.FromSeconds(30);
             item.IsExpired = false;
 
             while (item.ExpirationTime > TimeSpan.Zero && !item.IsExpired)
@@ -230,9 +232,9 @@ namespace Project_Lily.ViewModels
             }
 
             item.IsExpired = false;
-        }
 
-        
+            ProductionItemDB.DeleteProduction(item.ProductionName);
+        }
     }
 }
 
