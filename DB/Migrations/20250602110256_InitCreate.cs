@@ -27,6 +27,20 @@ namespace DB.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Ingredient",
+                columns: table => new
+                {
+                    IngredientNum = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    IngredientName = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
+                    Description_I = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Ingredient", x => x.IngredientNum);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Product",
                 columns: table => new
                 {
@@ -39,27 +53,6 @@ namespace DB.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Product", x => x.ProductNum);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Ingredient",
-                columns: table => new
-                {
-                    IngredientNum = table.Column<int>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    IngredientName = table.Column<string>(type: "TEXT", maxLength: 100, nullable: false),
-                    Description_I = table.Column<string>(type: "TEXT", nullable: false),
-                    CountryNum = table.Column<int>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Ingredient", x => x.IngredientNum);
-                    table.ForeignKey(
-                        name: "FK_Ingredient_Countries_CountryNum",
-                        column: x => x.CountryNum,
-                        principalTable: "Countries",
-                        principalColumn: "CountryNum",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -77,21 +70,21 @@ namespace DB.Migrations
 
             migrationBuilder.InsertData(
                 table: "Ingredient",
-                columns: new[] { "IngredientNum", "CountryNum", "Description_I", "IngredientName" },
+                columns: new[] { "IngredientNum", "Description_I", "IngredientName" },
                 values: new object[,]
                 {
-                    { 1, 0, "무기 제작에 사용되는 고강도 금속 원석", "암철석" },
-                    { 2, 0, "고열을 견디는 귀금속, 전도성이 뛰어남", "진토금" },
-                    { 3, 0, "고대 생물의 화석에서 채굴되는 결정성 자원", "석기정" },
-                    { 4, 0, "깊은 해저에서 추출되는 희귀 금속", "심해석" },
-                    { 5, 0, "정제된 고순도 수자원, 생명 유지나 에너지 전환에 사용", "청류정수" },
-                    { 6, 0, "수중 생명체 뼈대에서 채취한 반투명 결정체", "바다수정" },
-                    { 7, 0, "대기 중에서 응결되는 가벼운 결정, 부유 장치 제작에 활용", "풍정석" },
-                    { 8, 0, "고속 회전에너지로 저장된 압축 에너지 컨테이너", "회오리 플라스크" },
-                    { 9, 0, "대기 진동과 공명하는 음파 기반의 마력 결정", "공명결정" },
-                    { 10, 0, "용암 지대에서 채굴되는 고열 금속 결정", "화염정광" },
-                    { 11, 0, "천연 용암석으로 이루어진 고열 연료 자원", "용석탄" },
-                    { 12, 0, "마그마 생물의 분비물로 형성된 진귀한 에너지 진주", "발화진주" }
+                    { 1, "무기 제작에 사용되는 고강도 금속 원석", "암철석" },
+                    { 2, "고열을 견디는 귀금속, 전도성이 뛰어남", "진토금" },
+                    { 3, "고대 생물의 화석에서 채굴되는 결정성 자원", "석기정" },
+                    { 4, "깊은 해저에서 추출되는 희귀 금속", "심해석" },
+                    { 5, "정제된 고순도 수자원, 생명 유지나 에너지 전환에 사용", "청류정수" },
+                    { 6, "수중 생명체 뼈대에서 채취한 반투명 결정체", "바다수정" },
+                    { 7, "대기 중에서 응결되는 가벼운 결정, 부유 장치 제작에 활용", "풍정석" },
+                    { 8, "고속 회전에너지로 저장된 압축 에너지 컨테이너", "회오리 플라스크" },
+                    { 9, "대기 진동과 공명하는 음파 기반의 마력 결정", "공명결정" },
+                    { 10, "용암 지대에서 채굴되는 고열 금속 결정", "화염정광" },
+                    { 11, "천연 용암석으로 이루어진 고열 연료 자원", "용석탄" },
+                    { 12, "마그마 생물의 분비물로 형성된 진귀한 에너지 진주", "발화진주" }
                 });
 
             migrationBuilder.InsertData(
@@ -107,24 +100,19 @@ namespace DB.Migrations
                     { 6, "냉각 및 연료 안정화에 사용되는 특수 결정. 에너지 장치 필수 자원", "플루오라이트(Fluorite X)", "발화진주 + 청류정수 + 회오리 플라스크 + 석기정" },
                     { 7, "생명 에너지와 기술이 융합된 생체 동력 코어", "제네시움(Genesium)", "화염정광 + 바다수정 + 공명결정 + 석기정" }
                 });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Ingredient_CountryNum",
-                table: "Ingredient",
-                column: "CountryNum");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Countries");
+
+            migrationBuilder.DropTable(
                 name: "Ingredient");
 
             migrationBuilder.DropTable(
                 name: "Product");
-
-            migrationBuilder.DropTable(
-                name: "Countries");
         }
     }
 }

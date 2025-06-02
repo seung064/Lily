@@ -35,5 +35,10 @@ namespace Project_Lily.Models
 
         [ObservableProperty]
         private bool isExpired = false;
+
+        /*
+        [ObservableProperty]
+        private DateTime producedAT;
+        */
     }
 }

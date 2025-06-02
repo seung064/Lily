@@ -13,12 +13,15 @@ using System.Windows.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;  // ObservableObject 클래스 사용
 using CommunityToolkit.Mvvm.Input;
 using System.Windows; // RelayCommand 클래스 사용
+using System.Data.SQLite;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
+using System.Data;
 
 namespace Project_Lily.ViewModels
 {
     public partial class TheranosProductionViewModel : ObservableObject
     {
-        
+
         [ObservableProperty]// 자동으로 public bool ProductionItemSelected { get; set; } 생성됨
         private bool production1ItemSelected; // 생산 아이템 선택 여부 
 
@@ -76,9 +79,10 @@ namespace Project_Lily.ViewModels
 
         public TheranosProductionViewModel() // 생성 아이템
         {
+            ProductionItemDB.CreateDatabaseAndTable(); // DB 생성 코드 먼저 실행        
             ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(30), Quantity = 0 });
             ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(60), Quantity=0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(45), Quantity = 0 });       
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTimer = TimeSpan.FromSeconds(600), ProductionTimer = TimeSpan.FromSeconds(45), Quantity = 0 });
         }
 
 
@@ -103,6 +107,8 @@ namespace Project_Lily.ViewModels
                 Production3ItemSelected = false;
                 _= StartProduction(3, ProductionItems[2]);
             }
+
+            
         }
 
 
@@ -115,6 +121,9 @@ namespace Project_Lily.ViewModels
 
             for (int i = 0; i < totalTime; i++)
             {
+
+
+
                 await Task.Delay(1000);
                 int progress = (i + 1) * 100 / totalTime; // 프로그레스바 진행률
                 int remainingTime = totalTime - (i + 1); // 남은 시간
@@ -139,8 +148,8 @@ namespace Project_Lily.ViewModels
                 }
             }
 
-            //컬렉션 추가
 
+           
 
             switch (lineNumber)
             {
@@ -152,6 +161,7 @@ namespace Project_Lily.ViewModels
                     break;
             }
 
+            ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
 
             // 생산 완료시 초기화
             switch (lineNumber)
@@ -175,7 +185,8 @@ namespace Project_Lily.ViewModels
                     break;
             }
 
-            OnProductionComplete(lineNumber - 1);
+            OnProductionComplete(lineNumber - 1); // 인덱스
+
         }
 
         private void OnProductionComplete(int itemIndex)
@@ -197,13 +208,17 @@ namespace Project_Lily.ViewModels
         {
             while (item.ExpirationTimer > TimeSpan.Zero && !item.IsExpired)
             {
+                /*
                 await Task.Delay(1000);
 
                 item.ExpirationTimer = item.ExpirationTimer.Subtract(TimeSpan.FromSeconds(1));
                 //item.ExpirationDisplay = $"{item.ExpirationTimer.Minutes:D2}:{item.ExpirationTimer.Seconds:D2}";
+                 */
+                await Task.Delay(1000); // 1초 대기
+                item.ExpirationTimer = item.ExpirationTimer.Subtract(TimeSpan.FromSeconds(1)); // 여기!!
             }
 
-           
+            item.IsExpired = true;
         }
     }
 }

@@ -16,8 +16,10 @@ namespace DB.Models
     {
         // Countries라는 테이블과 연결됨 (DbSet<모델 클래스> 이름)
         public DbSet<Country> Countries { get; set; }
-
-
+        public DbSet<ProductionItemDBModel> ProductionItems { get; set; }
+        public DbSet<Ingredient> Ingredients { get; set; }
+        public DbSet<Product> Products { get; set; }
+        
         // DB 연결 문자열 설정
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -170,9 +172,7 @@ namespace DB.Models
                     Description_P = "생명 에너지와 기술이 융합된 생체 동력 코어",
                     Receipt = "화염정광 + 바다수정 + 공명결정 + 석기정",
                 }
-
             );
-
         }
     }
 }
