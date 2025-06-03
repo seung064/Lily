@@ -36,6 +36,18 @@ namespace Project_Lily.Models
         [ObservableProperty]
         private bool isExpired = false;
 
+        [ObservableProperty]
+        private bool itemSelected;
+
+        [ObservableProperty]
+        private bool started;
+
+        [ObservableProperty]
+        private int progress;
+
+        [ObservableProperty]
+        private int remainingTime;
+
         /*
         [ObservableProperty]
         private DateTime producedAT;

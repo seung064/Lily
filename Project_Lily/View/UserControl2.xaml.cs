@@ -21,10 +21,12 @@ namespace Project_Lily.View
     /// </summary>
     public partial class UserControl2 : UserControl
     {
-        public UserControl2()
+
+        public UserControl2(ProductionViewModel sharedVM)
         {
             InitializeComponent();
-            this.DataContext = new TheranosProductionViewModel();  // 뷰모델 연결
+            //this.DataContext = new TheranosProductionViewModel();  // 뷰모델 연결
+            DataContext = sharedVM;
         }
     }
 }

@@ -13,7 +13,7 @@ using CommunityToolkit.Mvvm.Input;
 using System.Windows.Controls;
 using Project_Lily.View;
 
-
+/*
 namespace Project_Lily.ViewModels
 {
     public partial class PageChangeViewModel : ObservableObject // ViewModelBase 클래스 / 속성과 UI 사이의 데이터 바인딩 자동 동작 / 반드시 partial class
@@ -30,27 +30,28 @@ namespace Project_Lily.ViewModels
             switch (userControlName)
             {
                 case "UserControl1":
-                    currentPage = new UserControl1();
+                    CurrentPage = new UserControl1();
                     break;
                 case "UserControl2":
-                    currentPage = new UserControl2();
+                    CurrentPage = new UserControl2();
                     break;
                 case "UserControl3":
-                    currentPage = new UserControl3();
+                    CurrentPage = new UserControl3();
                     break;
                 case "UserControl4":
-                    currentPage = new UserControl4();
+                    CurrentPage = new UserControl4();
                     break;
                 case "UserControl5":
-                    currentPage = new UserControl5();
+                    CurrentPage = new UserControl5();
                     break;
                 case "UserControl6":
-                    currentPage = new UserControl6();
+                    CurrentPage = new UserControl6();
                     break;
                 case "UserControl7":
-                    currentPage = new UserControl7();
+                    CurrentPage = new UserControl7();
                     break;
             }
         }
     }
 }
+*/

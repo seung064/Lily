@@ -22,7 +22,7 @@ namespace Project_Lily.ViewModels
 {
     public partial class TheranosProductionViewModel : ObservableObject
     {
-
+        
         [ObservableProperty]// 자동으로 public bool ProductionItemSelected { get; set; } 생성됨
         private bool production1ItemSelected; // 생산 아이템 선택 여부 
 
@@ -172,7 +172,6 @@ namespace Project_Lily.ViewModels
                     break;
             }
 
-            ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
 
             // 생산 완료시 초기화
             switch (lineNumber)
@@ -195,6 +194,10 @@ namespace Project_Lily.ViewModels
                     Production3RemainingTime = 0;
                     break;
             }
+
+            ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
+
+
 
             item.IsExpired = false;
             StartExpirationTimer(item,lineNumber - 1,lineNumber);
@@ -231,9 +234,9 @@ namespace Project_Lily.ViewModels
                 }
             }
 
-            item.IsExpired = false;
 
             ProductionItemDB.DeleteProduction(item.ProductionName);
+            ProductionItems.Remove(item);
         }
     }
 }

@@ -8,9 +8,20 @@
                      Background="#06223c"
         Title="MainWindow" Height="800" Width="500">
 
-
+    <!-- 테스트용-->
     <Grid>
-        <!-- 테스트용 임시 주석 ContentControl Content="{Binding currentPage}"/-->
-        <local:UserControl2/><!-- 테스트 유저컨트롤 -->
+        <!-- 화면 고정 UI: 버튼 등 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+            <Button Content="UserControl1" Click="ShowUC1_Click"/>
+            <Button Content="UserControl2" Click="ShowUC2_Click"/>
+        </StackPanel>
+
+        <!-- 유저컨트롤을 표시할 메인 영역 -->
+        <Grid x:Name="MainGrid" Margin="0,50,0,0"/>
     </Grid>
+
+
+
+    <!-- 테스트용 임시 주석 ContentControl Content="{Binding currentPage}"/-->
+        <!--local:UserControl2/> 테스트 유저컨트롤 -->
 </Window>

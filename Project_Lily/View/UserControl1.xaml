@@ -7,6 +7,11 @@
              mc:Ignorable="d" 
              Background="#06223c"
              d:DesignHeight="800" d:DesignWidth="500">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </UserControl.Resources>
+
+
     <Grid>
         <TabControl Background="#06223c" Foreground="White">
             <TabItem Header="행성" Foreground="Red" Background="#06223c">
@@ -153,13 +158,39 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
+                            <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" ItemsSource="{Binding ProductionItems}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Vertical"/>
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Text="{Binding ProductionName}" Grid.Column="0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+
+                         
+
+
                             <TextBlock Text="보유 재료" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
                             <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0"/>
 
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="재료1" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
+                            <!--Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding ProductionName}" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding ProductionItems[0].ExpirationTime, StringFormat='mm\\:ss'}" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
 
                             <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="2" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="재료1" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -179,18 +210,15 @@
 
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Grid.Row="3" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="재료1" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"/>
+                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"/-->
 
                             <Button x:Name="Trash2" Width="30" Height="30" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
                             </Button>
                             <Button x:Name="Combination1" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="(a/6)" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
+                            <TextBlock Text="{Binding Quantity, StringFormat='({0}/6)'}" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
-
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
 
                             <Separator Margin="0,10,0,10" Grid.ColumnSpan="10" Grid.Row="6"/>
 
