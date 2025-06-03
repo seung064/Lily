@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Shapes;
 using Project_Lily.Models;
 using Project_Lily.ViewModels;
+using CommunityToolkit.Mvvm.ComponentModel;
+using System.Collections.ObjectModel;
+using System.Security.Cryptography.Xml;
 
+// Theranos
 public class PlanetViewModel1 : ProductionViewModel
 {
     protected override void InitializeItems()
@@ -16,7 +21,7 @@ public class PlanetViewModel1 : ProductionViewModel
     }
 }
 
-// 행성2: 암철석 계열  
+// Aquarius 
 public class PlanetViewModel2 : ProductionViewModel
 {
     protected override void InitializeItems()
@@ -27,7 +32,7 @@ public class PlanetViewModel2 : ProductionViewModel
     }
 }
 
-// 행성3: 석기정 계열
+// Silphy
 public class PlanetViewModel3 : ProductionViewModel
 {
     protected override void InitializeItems()
@@ -38,14 +43,30 @@ public class PlanetViewModel3 : ProductionViewModel
     }
 }
 
-// 행성4: 약초 계열
+// Infarna
 public class PlanetViewModel4 : ProductionViewModel
 {
     protected override void InitializeItems()
     {
-        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Infena.png", ProductionName = "화염저왕", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
-        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Infena.png", ProductionName = "용석탄", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
-        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Infena.png", ProductionName = "발화진주", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
+        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Inferna.png", ProductionName = "화염저왕", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
+        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Inferna.png", ProductionName = "용석탄", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
+        ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Inferna.png", ProductionName = "발화진주", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
     }
 }
 
+public class PlanetProductionViewModel : ObservableObject
+{
+    public ObservableCollection<ProductionViewModel> PlanetProductionViewModels { get; set; }
+
+
+    public PlanetProductionViewModel()
+    {
+        PlanetProductionViewModels = new ObservableCollection<ProductionViewModel>
+        {
+            new PlanetViewModel1(),
+            new PlanetViewModel2(),
+            new PlanetViewModel3(),
+            new PlanetViewModel4()
+        };
+    }
+}

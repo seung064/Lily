@@ -39,7 +39,7 @@ namespace Project_Lily.Models
         [ObservableProperty]
         private bool itemSelected;
 
-        /* -> ProductionLineStatus에 작성
+        
         [ObservableProperty]
         private bool started;
         
@@ -48,8 +48,7 @@ namespace Project_Lily.Models
         
         [ObservableProperty]
         private int remainingTime;
-        */
-
+        
 
         // 계산 속성 IsProduced: Quantity > 0이면 true / 읽기전용
         public bool IsProduced => Quantity > 0;
@@ -62,6 +61,11 @@ namespace Project_Lily.Models
 
         [ObservableProperty]
         private DateTime productionCompleteTime;
+
+        [ObservableProperty]
+        private int lineNumber; // 생산 라인 번호
+
+
         /*
         [ObservableProperty]
         private DateTime producedAT;

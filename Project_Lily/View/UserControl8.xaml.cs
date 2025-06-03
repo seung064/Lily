@@ -12,19 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Project_Lily.ViewModels;
 
 namespace Project_Lily.View
 {
-    public partial class UserControl3 : UserControl
+    /// <summary>
+    /// Interaction logic for UserControl8.xaml
+    /// </summary>
+    public partial class UserControl8 : UserControl
     {
-
-        public UserControl3(ProductionViewModel planetVM)
+        public UserControl8()
         {
             InitializeComponent();
-            //this.DataContext = new TheranosProductionViewModel();  // 뷰모델 연결
-            DataContext = planetVM;
         }
     }
 }
-

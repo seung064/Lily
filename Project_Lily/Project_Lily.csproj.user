@@ -23,5 +23,8 @@
     <Compile Update="View\UserControl7.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\UserControl8.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

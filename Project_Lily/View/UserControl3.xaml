@@ -60,24 +60,24 @@
                 <Separator Margin="10,20,10,0" Grid.ColumnSpan="8" Grid.Row="4" VerticalAlignment="Center"/>
 
 
-                <CheckBox IsChecked="{Binding ProductionLines[0].ItemSelected}" Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
+                <CheckBox IsChecked="{Binding ProductionItems[3].ItemSelected}" Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Grid.Row="5" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="심해석" Grid.Row="5" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[0].Quantity}" Grid.Row="5" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[0].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="5" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[3].ProductionName}" Grid.Row="5" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[3].Quantity}" Grid.Row="5" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[3].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="5" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
 
-                <CheckBox IsChecked="{Binding ProductionLines[1].ItemSelected}" Grid.Row="6" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
+                <CheckBox IsChecked="{Binding ProductionItems[4].ItemSelected}" Grid.Row="6" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Grid.Row="6" Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                <TextBlock Text="청류정수" Grid.Row="6" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[1].Quantity}" Grid.Row="6" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[1].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="6" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[4].ProductionName}" Grid.Row="6" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[4].Quantity}" Grid.Row="6" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[4].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="6" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
-                <CheckBox IsChecked="{Binding ProductionLines[2].ItemSelected}" Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
+                <CheckBox IsChecked="{Binding ProductionItems[5].ItemSelected}" Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" HorizontalAlignment="Center" />
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="7" Grid.Column="1" />
-                <TextBlock Text="바다수정" Grid.Row="7" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[2].Quantity}" Grid.Row="7" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionItems[2].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="7" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[5].ProductionName}" Grid.Row="7" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[5].Quantity}" Grid.Row="7" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[5].ExpirationTime, StringFormat='mm\\:ss'}" Grid.Row="7" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
                 <Button Content="생산" Command="{Binding ProductionCommand}" Width="100" Height="130" Grid.ColumnSpan="5" Grid.Column="5" Grid.RowSpan="5" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 <!-- 함수명+Command로 써야함 -->
@@ -88,20 +88,20 @@
 
 
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="11" Grid.Column="0" />
-                <TextBlock Text="심해석" Grid.ColumnSpan="2" Grid.Row="11" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionLines[0].RemainingTime}" Grid.Row="11" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionLines[0].Progress}" Margin="15" Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <TextBlock Text="{Binding ProductionItems[3].ProductionName}" Grid.ColumnSpan="2" Grid.Row="11" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[3].RemainingTime}" Grid.Row="11" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionItems[3].ProductionProgress}" Margin="15" Grid.Row="11" Grid.Column="3" Grid.ColumnSpan="3"/>
 
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="12" Grid.Column="0" />
-                <TextBlock Text="청류정수" Grid.ColumnSpan="2" Grid.Row="12" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionLines[1].RemainingTime}" Grid.Row="12" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionLines[1].Progress}" Margin="15" Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <TextBlock Text="{Binding ProductionItems[4].ProductionName}" Grid.ColumnSpan="2" Grid.Row="12" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[4].RemainingTime}" Grid.Row="12" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionItems[4].ProductionProgress}" Margin="15" Grid.Row="12" Grid.Column="3" Grid.ColumnSpan="3"/>
 
 
                 <Image Source="/Assets/Aquarius.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="13" Grid.Column="0" />
-                <TextBlock Text="바다수정" Grid.ColumnSpan="2" Grid.Row="13" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBlock Text="{Binding ProductionLines[2].RemainingTime}" Grid.Row="13" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionLines[2].Progress}" Margin="15" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan="3"/>
+                <TextBlock Text="{Binding ProductionItems[5].ProductionName}" Grid.ColumnSpan="2" Grid.Row="13" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding ProductionItems[5].RemainingTime}" Grid.Row="13" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionItems[5].ProductionProgress}" Margin="15" Grid.Row="13" Grid.Column="3" Grid.ColumnSpan="3"/>
 
             </Grid>
         </GroupBox>

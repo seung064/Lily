@@ -157,32 +157,42 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
+                            
+                            
+                            
+                            <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto">
+                                <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" ItemsSource="{Binding ProductionItems}">
 
-                            <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" ItemsSource="{Binding ProductionItems}">
-                                <ItemsControl.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <StackPanel Orientation="Vertical"/>
-                                    </ItemsPanelTemplate>
-                                </ItemsControl.ItemsPanel>
-                                
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <Grid Margin="5">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="*" />
-                                            </Grid.ColumnDefinitions>
-                                            
-                                            <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                            <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                       
-                                        </Grid>
-                                    </DataTemplate>
-                                </ItemsControl.ItemTemplate>
-                            </ItemsControl>
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Vertical"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="5">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <!--Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
+
+                                            </Grid.RowDefinitions-->
+
+                                                <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
 
 
-                         
+
 
 
                             <TextBlock Text="보유 재료" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
