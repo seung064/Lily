@@ -6,6 +6,7 @@ using Project_Lily.Models;
 using DB.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 
 namespace Project_Lily.ViewModels
 {
@@ -29,8 +30,11 @@ namespace Project_Lily.ViewModels
         [ObservableProperty]
         private bool isExpired;
 
+        [ObservableProperty]
+        private bool isProduced;
 
-        public bool IsProduced => Quantity > 0;
+        [ObservableProperty]
+        private DateTime productionCompleteTime;
 
 
 
@@ -51,9 +55,9 @@ namespace Project_Lily.ViewModels
         protected virtual void InitializeItems()
         {
             // 기본 구현 (테스트용)
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTimer = TimeSpan.FromSeconds(10), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(15), ProductionTimer = TimeSpan.FromSeconds(5), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTimer = TimeSpan.FromSeconds(15), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
         }
 
 
@@ -83,7 +87,7 @@ namespace Project_Lily.ViewModels
         private async Task StartProduction(int lineIndex, ProductionItem item)
         {
             item.IsExpired = false;
-            int totalTime = (int)item.ProductionTimer.TotalSeconds;
+            int totalTime = (int)item.ProductionTime.TotalSeconds;
 
             ProductionLines[lineIndex].Started = true;
 
@@ -98,45 +102,53 @@ namespace Project_Lily.ViewModels
             }
 
             ProductionItems[lineIndex].Quantity++;
+            item.ProductionCompleteTime = DateTime.Now;
+
+
+            // 리스트 내 재정렬 (예:ProductionTimer 빠른 순으로 정렬)
+            var sorted = ProductionItems.OrderBy(sorting => sorting.ProductionTime).ToList();
+            ProductionItems.Clear();
+            foreach (var sorting in sorted)
+                ProductionItems.Add(sorting);
+
+            // DB에 저장
             ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
+
+
 
             // 생산 완료시 초기화
             ProductionLines[lineIndex].Started = false;
             ProductionLines[lineIndex].Progress = 0;
             ProductionLines[lineIndex].RemainingTime = 0;
 
-            bool isProduced = true;
             StartExpirationTimer(item, lineIndex);
         }
 
         private async void StartExpirationTimer(ProductionItem item, int lineIndex)
         {
-            if(isProduced == true)
+
+            var originalExpirationTime = item.ExpirationTime;
+            item.IsExpired = false;
+
+            while (item.ExpirationTime > TimeSpan.Zero && !item.IsExpired)
             {
-                var originalExpirationTime = item.ExpirationTime;
-                item.IsExpired = false;
-
-                while (item.ExpirationTime > TimeSpan.Zero && !item.IsExpired)
-                {
-                    await Task.Delay(1000);
-                    item.ExpirationTime = item.ExpirationTime.Subtract(TimeSpan.FromSeconds(1));
-                }
-
-                item.IsExpired = true;
-                if (item.IsExpired == true)
-                {
-                    ProductionItems[lineIndex].Quantity--;
-                }
-
-                ProductionItemDB.DeleteProduction(item.ProductionName);
-                item.ExpirationTime = originalExpirationTime;
+                await Task.Delay(1000);
+                item.ExpirationTime = item.ExpirationTime.Subtract(TimeSpan.FromSeconds(1));
             }
 
-            bool isProduced = false;
+            item.IsExpired = true;
+            if (item.IsExpired == true)
+            {
+                ProductionItems[lineIndex].Quantity--;
+            }
+
+            ProductionItemDB.DeleteProduction(item.ProductionName);
+            item.ExpirationTime = originalExpirationTime;
+
         }
 
 
-        /*
+
         // 생산라인별 선택 상태 접근을 위한 헬퍼 프로퍼티들 (XAML 바인딩용)
         public bool Production1ItemSelected
         {
@@ -168,6 +180,6 @@ namespace Project_Lily.ViewModels
         public bool Production3Started => ProductionLines[2].Started;
         public int Production3Progress => ProductionLines[2].Progress;
         public int Production3RemainingTime => ProductionLines[2].RemainingTime;
-        */
+        
     }
 }

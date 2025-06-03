@@ -94,9 +94,9 @@ namespace Project_Lily.ViewModels
         public TheranosProductionViewModel() // 생성 아이템
         {
             ProductionItemDB.CreateDatabaseAndTable(); // DB 생성 코드 먼저 실행        
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTimer = TimeSpan.FromSeconds(10), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(15), ProductionTimer = TimeSpan.FromSeconds(5), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTimer = TimeSpan.FromSeconds(15), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(15), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 30, ExpirationTime = TimeSpan.FromSeconds(60), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
         }
         
 
@@ -131,7 +131,7 @@ namespace Project_Lily.ViewModels
         {
 
             item.IsExpired = false;
-            int totalTime = (int)item.ProductionTimer.TotalSeconds; // 총 생산 시간 (초 단위)
+            int totalTime = (int)item.ProductionTime.TotalSeconds; // 총 생산 시간 (초 단위)
 
             for (int i = 0; i < totalTime; i++)
             {

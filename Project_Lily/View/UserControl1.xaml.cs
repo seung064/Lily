@@ -14,17 +14,17 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Project_Lily.ViewModels;
 
-namespace Project_Lily
+namespace Project_Lily.View
 {
     /// <summary>
     /// Interaction logic for UserControl1.xaml
     /// </summary>
     public partial class UserControl1 : UserControl
     {
-        public UserControl1(ProductionViewModel sharedVM)
+        public UserControl1(ProductionViewModel planetVM)
         {
             InitializeComponent();
-            DataContext = sharedVM;
+            DataContext = planetVM;
         }
     }
 }

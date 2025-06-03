@@ -21,5 +21,10 @@ namespace Project_Lily.Models
         [ObservableProperty]
         private int remainingTime;
 
+        [ObservableProperty]
+        private int quantity;
+
+        [ObservableProperty]
+        private DateTime productionCompleteTime;
     }
 }

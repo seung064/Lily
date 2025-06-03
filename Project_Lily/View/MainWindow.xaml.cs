@@ -17,23 +17,57 @@ namespace Project_Lily.View;
 /// </summary>
 public partial class MainWindow : Window
 {
+    /*
+    private PlanetViewModel1 planet1VM = new();
+    private PlanetViewModel2 planet2VM = new();
+    private PlanetViewModel3 planet3VM = new();
+    private PlanetViewModel4 planet4VM = new();
+    */
+
     public MainWindow()
     {
         InitializeComponent();
-        //DataContext = new PageChangeViewModel();  // 뷰모델을 DataContext로 연결
     }
 
-    private ProductionViewModel sharedVM = new ProductionViewModel();
+    //private ProductionViewModel planetVM = new();
+
+    private ProductionViewModel planetVM = new ProductionViewModel();
 
     private void ShowUC1_Click(object sender, RoutedEventArgs e)
     {
         MainGrid.Children.Clear();
-        MainGrid.Children.Add(new UserControl1(sharedVM));
+        MainGrid.Children.Add(new UserControl1(planetVM));
     }
 
     private void ShowUC2_Click(object sender, RoutedEventArgs e)
     {
         MainGrid.Children.Clear();
-        MainGrid.Children.Add(new UserControl2(sharedVM));
+        MainGrid.Children.Add(new UserControl2(planetVM));
     }
+
+    private void ShowUC3_Click(object sender, RoutedEventArgs e)
+    {
+        MainGrid.Children.Clear();
+        MainGrid.Children.Add(new UserControl3(planetVM));
+    }
+
+    private void ShowUC4_Click(object sender, RoutedEventArgs e)
+    {
+        MainGrid.Children.Clear();
+        MainGrid.Children.Add(new UserControl4(planetVM));
+    }
+
+    private void ShowUC5_Click(object sender, RoutedEventArgs e)
+    {
+        MainGrid.Children.Clear();
+        MainGrid.Children.Add(new UserControl5(planetVM));
+    }
+
+    /*
+    private void ShowUC6_Click(object sender, RoutedEventArgs e)
+    {
+        MainGrid.Children.Clear();
+        MainGrid.Children.Add(new UserControl6(sharedVM));
+    }
+    */
 }

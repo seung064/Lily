@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Project_Lily.UserControl6"
+﻿<UserControl x:Class="Project_Lily.View.UserControl6"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -7,7 +7,10 @@
              mc:Ignorable="d" 
              Background="#06223c"
              d:DesignHeight="800" d:DesignWidth="500">
-
+    
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    </UserControl.Resources>
     <Grid>
         <Grid>
             <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->

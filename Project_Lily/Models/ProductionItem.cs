@@ -22,7 +22,7 @@ namespace Project_Lily.Models
         private int productionProgress; // 생산 진행율
 
         [ObservableProperty]
-        private TimeSpan productionTimer; // 생산 시간
+        private TimeSpan productionTime; // 생산 시간
 
         [ObservableProperty]
         private TimeSpan expirationTime; // 유통기한
@@ -39,15 +39,29 @@ namespace Project_Lily.Models
         [ObservableProperty]
         private bool itemSelected;
 
+        /* -> ProductionLineStatus에 작성
         [ObservableProperty]
         private bool started;
-
+        
         [ObservableProperty]
         private int progress;
-
+        
         [ObservableProperty]
         private int remainingTime;
+        */
 
+
+        // 계산 속성 IsProduced: Quantity > 0이면 true / 읽기전용
+        public bool IsProduced => Quantity > 0;
+
+        partial void OnQuantityChanged(int oldValue, int newValue)
+        {
+            OnPropertyChanged(nameof(IsProduced));
+        }
+
+
+        [ObservableProperty]
+        private DateTime productionCompleteTime;
         /*
         [ObservableProperty]
         private DateTime producedAT;

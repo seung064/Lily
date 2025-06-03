@@ -14,6 +14,10 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
             <Button Content="UserControl1" Click="ShowUC1_Click"/>
             <Button Content="UserControl2" Click="ShowUC2_Click"/>
+            <Button Content="UserControl3" Click="ShowUC3_Click"/>
+            <Button Content="UserControl4" Click="ShowUC4_Click"/>
+            <Button Content="UserControl5" Click="ShowUC5_Click"/>
+            <!--Button Content="UserControl6" Click="ShowUC6_Click"/-->
         </StackPanel>
 
         <!-- 유저컨트롤을 표시할 메인 영역 -->
