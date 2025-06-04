@@ -75,16 +75,17 @@ namespace Project_Lily
                     catch (SQLiteException ex)
                     {
                         if (ex.Message.Contains("UNIQUE constraint failed: Users.UserId"))
-                        {   
+                        {
                             // 이미 사용중인 아이디 확인
                             MessageBox.Show("이미 사용 중인 아이디입니다. 다른 아이디를 사용해 주세요.");
                         }
-                        
+
                         else
                         {
                             MessageBox.Show("회원가입 실패: " + ex.Message);
                         }
                     }
+                    
                 }
             }
         }

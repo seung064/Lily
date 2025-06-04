@@ -90,3 +90,5 @@ C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\Project_L
 C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\Project_.83192F7E.Up2Date
 C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\LogInUI\AdminLogin.g.cs
 C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\LogInUI\AdminLogin.baml
+C:\Users\frank\source\repos\Lily\Project_Lily\bin\Debug\net8.0-windows\Assets\LoginBGM.mp3
+C:\Users\frank\source\repos\Lily\Project_Lily\obj\Debug\net8.0-windows\Project_Lily_Content.g.cs

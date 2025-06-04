@@ -17,12 +17,19 @@
     <None Remove="Assets\Inferna.png" />
     <None Remove="Assets\Lily.png" />
     <None Remove="Assets\Login.png" />
+    <None Remove="Assets\LoginBGM.mp3" />
     <None Remove="Assets\Magnesyl Alloy.png" />
     <None Remove="Assets\Plasma Heart.png" />
     <None Remove="Assets\Silphy.png" />
     <None Remove="Assets\Sky_Crystal.png" />
     <None Remove="Assets\Theranos.png" />
     <None Remove="Assets\Trash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\LoginBGM.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
