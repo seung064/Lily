@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Lily_DB.Models
+namespace DB.Models
 {
     public class Ingredient
     {
@@ -18,9 +18,5 @@ namespace Project_Lily_DB.Models
 
         public string Description_I { get; set; }
 
-
-        [ForeignKey("Country")]
-        public int CountryNum { get; set; }
-        public Country Country { get; set; }
     }
 }

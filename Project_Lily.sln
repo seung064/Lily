@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Lily", "Project_Lily\Project_Lily.csproj", "{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29B4B28B-2C2E-4C92-818B-A8A7F334F3E4} = {29B4B28B-2C2E-4C92-818B-A8A7F334F3E4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Lily_DB", "Project_Lily_DB\Project_Lily_DB.csproj", "{C36E151C-02E7-4F9A-BBF1-720A455A79C2}"
 EndProject

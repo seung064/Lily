@@ -1,48 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\frank\\source\\repos\\Lily\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\signup.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\findpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\findpassword.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\converter\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\converter\\booltovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\adminlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\adminlogin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\source\\repos\\lily\\project_lily\\loginui\\adminlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\adminlogin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\o\\source\\repos\\Lily\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -50,12 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -70,131 +25,15 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "Project_Lily\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAzwCoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T00:46:53.782Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\MainWindow.xaml",
-              "RelativeToolTip": "Project_Lily\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-02T01:30:56.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AdminLogin.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\AdminLogin.xaml.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\AdminLogin.xaml.cs",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\AdminLogin.xaml.cs",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\AdminLogin.xaml.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAowKAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T10:48:47.091Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SignUp.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\SignUp.xaml.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\SignUp.xaml.cs",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\SignUp.xaml.cs",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\SignUp.xaml.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAYwDwAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T10:23:42.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\Login.xaml.cs",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\Login.xaml.cs",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\Login.xaml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwFEAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T03:02:45.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\Login.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\Login.xaml",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\Login.xaml",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-30T03:58:06.992Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SignUp.xaml",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\SignUp.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\SignUp.xaml",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\SignUp.xaml",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\SignUp.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-30T03:58:21.419Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FindPassword.xaml",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\FindPassword.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\FindPassword.xaml",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\FindPassword.xaml",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\FindPassword.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-02T02:37:14.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BoolToVisibilityConverter.cs",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\Converter\\BoolToVisibilityConverter.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\Converter\\BoolToVisibilityConverter.cs",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\Converter\\BoolToVisibilityConverter.cs",
-              "RelativeToolTip": "Project_Lily\\Converter\\BoolToVisibilityConverter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T02:40:58.685Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AdminLogin.xaml",
-              "DocumentMoniker": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\AdminLogin.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\AdminLogin.xaml",
-              "ToolTip": "C:\\Users\\frank\\source\\repos\\Lily\\Project_Lily\\LogInUI\\AdminLogin.xaml",
-              "RelativeToolTip": "Project_Lily\\LogInUI\\AdminLogin.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-01T10:48:43.434Z"
             }
           ]
         }

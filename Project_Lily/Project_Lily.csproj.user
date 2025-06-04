@@ -14,23 +14,5 @@
     <Compile Update="LogInUI\SignUp.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControl1.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl2.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl3.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl4.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl5.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl6.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
