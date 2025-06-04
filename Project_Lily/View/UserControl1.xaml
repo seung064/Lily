@@ -51,36 +51,43 @@
                             <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
 
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0" />
-                            <Image Source="/Assets/Lily.png" Width="140" Height="140" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+                            <Image Source="/Assets/Lily.png" Width="120" Height="120" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
                             <TextBlock Text="1111111111" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="10"/>
 
 
                             <TextBlock Text="보유 재료" Foreground="White" FontSize="20" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="4" VerticalAlignment="Center"/>
 
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="5" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="5" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="5" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <ScrollViewer Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto">
+                                <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" ItemsSource="{Binding ProducedItems}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Vertical"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
 
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="6" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="재료2" Grid.Row="6" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="6" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="5">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <!--Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                                <RowDefinition Height="*"/>
 
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Grid.Row="7" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료3" Grid.Row="7" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="7" Grid.Column="2" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Grid.RowDefinitions-->
+                                                <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="5" Grid.Column="3" />
-                            <TextBlock Text="재료1" Grid.Row="5" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="5" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="6" Grid.Column="3" />
-                            <TextBlock Text="재료2" Grid.Row="6" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="6" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="7" Grid.Column="3" />
-                            <TextBlock Text="재료3" Grid.Row="7" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="7" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
 
                             <TextBlock Text="(a/6)" Grid.Column="6" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
@@ -90,7 +97,7 @@
                             <Separator Grid.ColumnSpan="6" Grid.Row="10" Margin="10,20,10,0"/>
 
 
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="11" Grid.Column="0" />
+                            <!--Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="11" Grid.Column="0" />
                             <TextBlock Text="재료3" Grid.Row="11" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="초" Grid.Row="11" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                             <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="3"/>
@@ -108,7 +115,38 @@
                             <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="14" Grid.Column="0" />
                             <TextBlock Text="재료3" Grid.Row="14" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="초" Grid.Row="14" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3"/>
+                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3"/-->
+                            <ScrollViewer Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" VerticalScrollBarVisibility="Auto">
+                                <ItemsControl Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" ItemsSource="{Binding ProducingItems}">
+                                    
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Vertical"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="5">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Source="{Binding ProductionImagePath}" Width="30" Height="30"  Grid.Column="0" />
+                                                <TextBlock Text="{Binding ProductionName}" Grid.ColumnSpan="2"  Grid.Column="1" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <ProgressBar Minimum="0" Maximum="100" Value="{Binding ProductionProgress}" FontSize="15" Grid.Column="3" VerticalAlignment="Center"  Grid.ColumnSpan="2" Width="NaN" Height="15"/>
+                                                <TextBlock Text="{Binding RemainingTime}"  HorizontalAlignment="Center" Grid.Column="5"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer> 
 
                             <TextBlock Text="(2/4)" Grid.Column="6" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
@@ -161,8 +199,7 @@
                             
                             
                             <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto">
-                                <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" ItemsSource="{Binding ProductionItems}">
-
+                                <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" ItemsSource="{Binding ProducedItems}">
                                     <ItemsControl.ItemsPanel>
                                         <ItemsPanelTemplate>
                                             <StackPanel Orientation="Vertical"/>
@@ -175,15 +212,16 @@
                                                 <Grid.ColumnDefinitions>
                                                     <ColumnDefinition Width="*" />
                                                     <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
                                                 <!--Grid.RowDefinitions>
                                                 <RowDefinition Height="*"/>
                                                 <RowDefinition Height="*"/>
 
                                             </Grid.RowDefinitions-->
-
-                                                <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                                             </Grid>
                                         </DataTemplate>

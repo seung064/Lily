@@ -43,7 +43,11 @@ namespace Project_Lily.ViewModels
         public ObservableCollection<ProductionItem> ProductionItems { get; set; } = new();
         // 12개 생산라인의 상태를 배열로 관리
         //public ProductionLineStatus[] ProductionItems { get; set; } = new ProductionLineStatus[12];
+        public ObservableCollection<ProductionItem> ProducedItems { get; set; } = new();   // 생산된 리스트용 (스크롤뷰)
+        public ObservableCollection<ProductionItem> ProducingItems { get; set; } = new();   // 생산중인 리스트용
 
+        public int ProducingCount => ProducingItems.Count;
+        public int ProducedCount => ProducedItems.Count;
 
         public ProductionViewModel()
         {
@@ -57,6 +61,17 @@ namespace Project_Lily.ViewModels
             }
             */
             InitializeItems();
+
+
+            ProducingItems.CollectionChanged += (s, e) =>
+            {
+                OnPropertyChanged(nameof(ProducingCount));
+            };
+
+            ProducedItems.CollectionChanged += (s, e) =>
+            {
+                OnPropertyChanged(nameof(ProducedCount));
+            };
         }
 
         protected virtual void InitializeItems()
@@ -89,26 +104,6 @@ namespace Project_Lily.ViewModels
                     _ = StartProduction(ProductionItems[i]);
                 }
             }
-
-            /*
-            if (ProductionLines[0].ItemSelected && !ProductionLines[0].Started && ProductionItems[0].Quantity < 1)
-            {
-                ProductionLines[0].ItemSelected = false;
-                _ = StartProduction(0, ProductionItems[0]); // _= 는 비동기로 처리가능
-            }
-
-            if (ProductionLines[1].ItemSelected && !ProductionLines[1].Started && ProductionItems[1].Quantity < 1)
-            {
-                ProductionLines[1].ItemSelected = false;
-                _ = StartProduction(1, ProductionItems[1]);
-            }
-
-            if (ProductionLines[2].ItemSelected && !ProductionLines[2].Started && ProductionItems[2].Quantity < 1)
-            {
-                ProductionLines[2].ItemSelected = false;
-                _ = StartProduction(2, ProductionItems[2]);
-            }
-            */
         }
 
         private async Task StartProduction(ProductionItem item)
@@ -117,7 +112,7 @@ namespace Project_Lily.ViewModels
             item.Started = true;
 
             int totalTime = (int)item.ProductionTime.TotalSeconds;
-
+            ProducingItems.Add(item);
             for (int i = 0; i < totalTime; i++)
             {
                 await Task.Delay(1000);
@@ -129,12 +124,14 @@ namespace Project_Lily.ViewModels
             item.ProductionCompleteTime = DateTime.Now;
 
 
-            // 리스트 내 재정렬 (예:ProductionTimer 빠른 순으로 정렬)
-            var sorted = ProductionItems.OrderBy(sorting => sorting.ProductionTime).ToList();
-            ProductionItems.Clear();
+            // 리스트 내 재정렬 (예:Production완료된 순으로 정렬) - 뷰
+            ProducingItems.Remove(item);     // 생산 중인 리스트에서 제거
+            ProducedItems.Add(item);    // 생산 완료된 리스트에 추가
+            var sorted = ProducedItems.OrderBy(x => x.ProductionCompleteTime).ToList();
+            ProducedItems.Clear();
             foreach (var sorting in sorted)
-            ProductionItems.Add(sorting);
-
+                ProducedItems.Add(sorting);
+            
 
             // DB에 저장
             ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
@@ -166,6 +163,9 @@ namespace Project_Lily.ViewModels
             if (item.IsExpired == true)
             {
                 item.Quantity--;
+
+                if (ProducedItems.Contains(item))
+                    ProducedItems.Remove(item);
             }
 
             ProductionItemDB.DeleteProduction(item.ProductionName);
