@@ -2,9 +2,6 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Update="View\UserControl1.xaml.cs">
-=======
     <Compile Update="LogInUI\AdminLogin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -15,31 +12,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LogInUI\SignUp.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="UserControl1.xaml.cs">
->>>>>>> Develop
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl2.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl3.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl4.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl5.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl6.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl7.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="View\UserControl8.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
