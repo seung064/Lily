@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\gli05\Desktop\Project1\Project_Lily_DB\obj\Debug\net8.0-windows\
+C:\Users\o\Source\Repos\Lily\Project_Lily_DB\obj\Debug\net8.0-windows\
 Project_Lily_DB
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\gli05\Desktop\Project1\Project_Lily_DB\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\o\Source\Repos\Lily\Project_Lily_DB\App.xaml
 11407045341
 
 82095403578
-217306250070
+222-1085505579
 MainWindow.xaml;
 
 False

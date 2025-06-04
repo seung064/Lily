@@ -17,6 +17,8 @@
     <None Remove="Assets\Geomagma Capsule.png" />
     <None Remove="Assets\Inferna.png" />
     <None Remove="Assets\Lily.png" />
+    <None Remove="Assets\Login.png" />
+    <None Remove="Assets\LoginBGM.mp3" />
     <None Remove="Assets\Magnesyl Alloy.png" />
     <None Remove="Assets\Plasma Heart.png" />
     <None Remove="Assets\Silphy.png" />
@@ -26,9 +28,11 @@
   </ItemGroup>
 
   <ItemGroup>
+
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
+
   </ItemGroup>
 
 
@@ -54,6 +58,7 @@
     <Resource Include="Assets\Lily.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Login.png" />
     <Resource Include="Assets\Magnesyl Alloy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
