@@ -41,13 +41,17 @@ namespace Project_Lily.ViewModels
 
 
         public ObservableCollection<ProductionItem> ProductionItems { get; set; } = new();
-        // 12개 생산라인의 상태를 배열로 관리
-        //public ProductionLineStatus[] ProductionItems { get; set; } = new ProductionLineStatus[12];
         public ObservableCollection<ProductionItem> ProducedItems { get; set; } = new();   // 생산된 리스트용 (스크롤뷰)
         public ObservableCollection<ProductionItem> ProducingItems { get; set; } = new();   // 생산중인 리스트용
 
         public int ProducingCount => ProducingItems.Count;
+        public int ProducingMax => 6;
         public int ProducedCount => ProducedItems.Count;
+        public int ProducedMax => 6;
+
+        public string ProducingCountText => $"{ProducingCount} / {ProducingMax}"; // 생산중인 아이템 개수 텍스트
+        public string ProducedCountText => $"{ProducedCount} / {ProducedMax}"; // 생산중인 아이템 개수 텍스트
+
 
         public ProductionViewModel()
         {

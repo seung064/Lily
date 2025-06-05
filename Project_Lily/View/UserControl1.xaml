@@ -89,7 +89,7 @@
                                 </ItemsControl>
                             </ScrollViewer>
 
-                            <TextBlock Text="(a/6)" Grid.Column="6" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                            <TextBlock Text="{Binding ProducedCountText}" Grid.Column="6" Grid.Row="8" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
                             <Separator Grid.ColumnSpan="6" Grid.Row="9" Margin="10"/>
 
@@ -148,7 +148,7 @@
                                 </ItemsControl>
                             </ScrollViewer> 
 
-                            <TextBlock Text="(2/4)" Grid.Column="6" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <TextBlock Text="{Binding ProducingCountText}" Grid.Column="6" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                             <!-- 타이머
                             <TextBlock Text="x" Margin="0,0,0,0" Foreground="White" Grid.Row="8" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -222,7 +222,6 @@
                                                 <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                                 <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                                 <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
                                             </Grid>
                                         </DataTemplate>
                                     </ItemsControl.ItemTemplate>
@@ -265,7 +264,7 @@
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
                             </Button>
                             <Button x:Name="Combination1" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="{Binding Quantity, StringFormat='({0}/6)'}" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
+                            <TextBlock Text="{Binding ProducedCountText}" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
 
