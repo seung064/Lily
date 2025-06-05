@@ -7,6 +7,7 @@ using DB.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+using System.Windows;
 
 namespace Project_Lily.ViewModels
 {
@@ -53,6 +54,7 @@ namespace Project_Lily.ViewModels
         public string ProducedCountText => $"{ProducedCount} / {ProducedMax}"; // 생산중인 아이템 개수 텍스트
 
 
+
         public ProductionViewModel()
         {
             ProductionItemDB.CreateDatabaseAndTable();
@@ -70,16 +72,19 @@ namespace Project_Lily.ViewModels
             ProducingItems.CollectionChanged += (s, e) =>
             {
                 OnPropertyChanged(nameof(ProducingCount));
+                OnPropertyChanged(nameof(ProducingCountText));
             };
 
             ProducedItems.CollectionChanged += (s, e) =>
             {
                 OnPropertyChanged(nameof(ProducedCount));
+                OnPropertyChanged(nameof(ProducedCountText));
             };
         }
 
         protected virtual void InitializeItems()
         {
+            /*
             // 기본 구현 (테스트용)
             ProductionItems.Add(new ProductionItem { LineNumber = 0, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
             ProductionItems.Add(new ProductionItem { LineNumber = 1, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
@@ -92,7 +97,22 @@ namespace Project_Lily.ViewModels
             ProductionItems.Add(new ProductionItem { LineNumber = 8, ProductionImagePath = "/Assets/Silphy.png", ProductionName = "공명결정", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
             ProductionItems.Add(new ProductionItem { LineNumber = 9, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "화염저왕", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
             ProductionItems.Add(new ProductionItem { LineNumber = 10, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "용석탄", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(10), Quantity = 0 });
-            ProductionItems.Add(new ProductionItem { LineNumber = 11, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "발화진주", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 11, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "발화진주", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(15), Quantity = 0 });            ProductionItems.Add(new ProductionItem { LineNumber = 0, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(30), ProductionTime = TimeSpan.FromSeconds(5), Quantity = 0 });
+            */
+            // 테스트2
+            ProductionItems.Add(new ProductionItem { LineNumber = 0, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "암철석", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(200), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 1, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "진토금", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(200), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 2, ProductionImagePath = "/Assets/Theranos.png", ProductionName = "석기정", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 3, ProductionImagePath = "/Assets/Aquarius.png", ProductionName = "심해석", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 4, ProductionImagePath = "/Assets/Aquarius.png", ProductionName = "청류정수", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 5, ProductionImagePath = "/Assets/Aquarius.png", ProductionName = "바다수정", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 6, ProductionImagePath = "/Assets/Silphy.png", ProductionName = "풍정석", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 7, ProductionImagePath = "/Assets/Silphy.png", ProductionName = "회오리 플라스크", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 8, ProductionImagePath = "/Assets/Silphy.png", ProductionName = "공명결정", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 9, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "화염저왕", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 10, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "용석탄", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+            ProductionItems.Add(new ProductionItem { LineNumber = 11, ProductionImagePath = "/Assets/Inferna.png", ProductionName = "발화진주", ProductionProgress = 0, ExpirationTime = TimeSpan.FromSeconds(300), ProductionTime = TimeSpan.FromSeconds(60), Quantity = 0 });
+
         }
 
 
@@ -100,8 +120,24 @@ namespace Project_Lily.ViewModels
         [RelayCommand]
         private void Production()
         {
+            int currentTotal = ProducingItems.Count + ProducedItems.Count;
+            if (currentTotal >= 6)
+            {
+                MessageBox.Show("더 이상 생산 불가");
+                // 생산 불가 시 선택된 체크박스 취소
+                for (int i = 0; i < ProductionItems.Count; i++)
+                {
+                    ProductionItems[i].ItemSelected = false;
+                }
+                return;
+            }
+
+            // 시간남으면 생산버튼 비활성 추가
+
             for (int i = 0; i < 12; i++)  // 배열/리스트 길이만큼 반복
             {
+                var item = ProductionItems[i];
+
                 if (ProductionItems[i].ItemSelected && !ProductionItems[i].Started && ProductionItems[i].Quantity < 1)
                 {
                     ProductionItems[i].ItemSelected = false;
