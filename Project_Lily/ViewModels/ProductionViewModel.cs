@@ -50,6 +50,9 @@ namespace Project_Lily.ViewModels
 
         [ObservableProperty]
         private int combinationLineNumber;
+
+        [ObservableProperty]
+        private CombinationItem selectedCombinationItem;
         //-----
 
         // 생산
@@ -303,6 +306,7 @@ namespace Project_Lily.ViewModels
                         ProducedItems.Remove(item);
                     }
 
+
                     return;
                 }
             }
@@ -314,6 +318,13 @@ namespace Project_Lily.ViewModels
 
 
 
+
+        // 전송
+
+        //----
+
+
+        // 생산된 물품삭제
         [RelayCommand]
         private void DeleteProducedItem()
         {
@@ -322,15 +333,16 @@ namespace Project_Lily.ViewModels
                 ProducedItems.Remove(SelectedProducedItem);
             }
         }
-        /*
+        
+        // 조합품 삭제
         [RelayCommand]
         private void DeleteCombinationItem()
         {
-            if (selectedCombinationItem != null)
+            if (SelectedCombinationItem != null)
             {
                 CombinationItems.Remove(SelectedCombinationItem);
             }
         }
-        */
+        
     }
 }

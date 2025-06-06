@@ -255,7 +255,7 @@
 
                             <!--TextBlock Text="(a/4)" Grid.Row="11" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/-->
 
-                            <Button x:Name="Trash3" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" Click="CombinationItemDelete" >
+                            <Button x:Name="Trash3" Command="{Binding DeleteCombinationItemCommand}" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" Click="CombinationItemDelete" >
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg" />
                             </Button>
                             
