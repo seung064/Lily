@@ -10,17 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Aether Core.png" />
     <None Remove="Assets\Aquarius.png" />
-    <None Remove="Assets\Fluorite X.png" />
     <None Remove="Assets\Genesium.png" />
-    <None Remove="Assets\Geomagma Capsule.png" />
     <None Remove="Assets\Inferna.png" />
     <None Remove="Assets\Lily.png" />
     <None Remove="Assets\Login.png" />
     <None Remove="Assets\LoginBGM.mp3" />
-    <None Remove="Assets\Magnesyl Alloy.png" />
-    <None Remove="Assets\Plasma Heart.png" />
     <None Remove="Assets\Silphy.png" />
     <None Remove="Assets\Sky_Crystal.png" />
     <None Remove="Assets\Theranos.png" />
@@ -37,19 +32,19 @@
 
 
   <ItemGroup>
-    <Resource Include="Assets\Aether Core.png">
+    <Resource Include="Assets\Aether_Core.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Aquarius.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Fluorite X.png">
+    <Resource Include="Assets\Fluorite_X.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Genesium.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Geomagma Capsule.png">
+    <Resource Include="Assets\Geomagma_Capsule.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Inferna.png">
@@ -59,10 +54,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Login.png" />
-    <Resource Include="Assets\Magnesyl Alloy.png">
+    <Resource Include="Assets\Magnesyl_Alloy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Plasma Heart.png">
+    <Resource Include="Assets\Plasma_Heart.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Silphy.png">

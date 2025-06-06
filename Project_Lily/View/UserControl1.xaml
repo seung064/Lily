@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Project_Lily"
+             xmlns:local="clr-namespace:Project_Lily.View"
              mc:Ignorable="d" 
              Background="#06223c"
              d:DesignHeight="800" d:DesignWidth="500">
@@ -48,11 +48,13 @@
                             </Grid.ColumnDefinitions>
 
                             <TextBlock Text="릴리" Foreground="White" Margin="10,0,0,0" FontSize="20" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3"/>
-                            <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                            <!--Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/-->
 
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0" />
                             <Image Source="/Assets/Lily.png" Width="120" Height="120" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
-                            <TextBlock Text="1111111111" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="10"/>
+                            <TextBlock Text="제5원소의 결정체" FontSize="15" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="4" Margin="10"/>
+                            <TextBlock Text="생명과 우주의 균형을 지키는 존재" FontSize="15" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="4" Margin="10"/>
+                            <TextBlock Text="제4원소의 재료를 통해 조합할 수 있는 공간" FontSize="15" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="4" Margin="10"/>
 
 
                             <TextBlock Text="보유 재료" Foreground="White" FontSize="20" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -74,15 +76,10 @@
                                                     <ColumnDefinition Width="*" />
                                                     <ColumnDefinition Width="*" />
                                                 </Grid.ColumnDefinitions>
-                                                <!--Grid.RowDefinitions>
-                                                <RowDefinition Height="*"/>
-                                                <RowDefinition Height="*"/>
 
-                                            </Grid.RowDefinitions-->
                                                 <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                                 <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                                 <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
                                             </Grid>
                                         </DataTemplate>
                                     </ItemsControl.ItemTemplate>
@@ -96,26 +93,6 @@
                             <TextBlock Text="생산 현황" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="2" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                             <Separator Grid.ColumnSpan="6" Grid.Row="10" Margin="10,20,10,0"/>
 
-
-                            <!--Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="11" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="11" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="11" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="11" Grid.Column="2" Grid.ColumnSpan="3"/>
-
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="12" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="12" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="12" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="12" Grid.Column="2" Grid.ColumnSpan="3"/>
-
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="13" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="13" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="13" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="13" Grid.Column="2" Grid.ColumnSpan="3"/>
-
-                            <Image Source="/Assets/Lily.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="14" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="14" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="초" Grid.Row="14" Grid.Column="6" Margin="0,0,0,0" FontSize="15" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                            <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3"/-->
                             <ScrollViewer Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" VerticalScrollBarVisibility="Auto">
                                 <ItemsControl Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" ItemsSource="{Binding ProducingItems}">
 
@@ -199,18 +176,21 @@
 
                             <ListBox ItemsSource="{Binding ProducedItems}"
                                      SelectionMode="Multiple"
+                                     SelectionChanged="ProductionListBox_SelectionChanged"
                                      BorderThickness="0"
                                      Background="Transparent"
-                                     HorizontalContentAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6">
+                                     HorizontalContentAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6"
+                                     x:Name="ProductionListBox"
+                                     SelectedItem="{Binding SelectedProducedItem, Mode=TwoWay}">
 
 
                                 <ListBox.ItemTemplate>
                                     <DataTemplate>
                                         <Grid Margin="5">
                                             <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="*" />
-                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="100" />
                                             </Grid.ColumnDefinitions>
 
                                             <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -226,10 +206,10 @@
                             <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0"/>
 
-                            <Button x:Name="Trash2" Width="30" Height="30" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Button x:Name="Trash2" Command="{Binding DeleteProducedItemCommand }" Width="30" Height="30" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
                             </Button>
-                            <Button x:Name="Combination1" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button Command="{Binding CombinationCommand}" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <TextBlock Text="{Binding ProducedCountText}" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
@@ -243,32 +223,44 @@
                             <!--Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/-->
 
 
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="8" Grid.Column="0" />
-                            <TextBlock Text="재료2" Grid.Row="8" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="8"/>
+                            <ListBox ItemsSource="{Binding CombinationItems}"
+                                     SelectionMode="Multiple"
+                                     SelectionChanged="ProductionListBox_SelectionChanged"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     HorizontalContentAlignment="Center" Grid.Row="8" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6"
+                                     x:Name="CombinationListBox"
+                                     SelectedItem="{Binding SelectedCombinationItem, Mode=TwoWay}">
 
 
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="9" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="9" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="9"/>
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="100" />
+                                                <ColumnDefinition Width="100" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Source="{Binding CombinationImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced,Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding CombinationName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding CombinationQuantity}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            
+                                            <!--TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" Foreground="White" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/-->
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
 
 
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="8" Grid.Column="3" />
-                            <TextBlock Text="재료2" Grid.Row="8" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="8"/>
+                            <!--TextBlock Text="(a/4)" Grid.Row="11" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/-->
 
-
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="9" Grid.Column="3" />
-                            <TextBlock Text="재료3" Grid.Row="9" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="9"/>
-
-
-                            <TextBlock Text="(a/4)" Grid.Row="10" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
-
-                            <Button x:Name="Trash3" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" >
-                                <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
+                            <Button x:Name="Trash3" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" Click="CombinationItemDelete" >
+                                <Image Source="pack://application:,,,/Assets/Trash.jpg" />
                             </Button>
-                            <Button x:Name="Submit1" Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
+                            
+                            
+                            <Button x:Name="Submit"  Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
@@ -279,10 +271,8 @@
 
 
 
-            <TabItem Header="도감" Foreground="Red" Background="#06223c">
+            <!--TabItem Header="도감" Foreground="Red" Background="#06223c">
                 <Grid>
-
-                    <!-- content 1개이상 쓰는 문제로 그리드 하나 더 추가 -->
                     <GroupBox Margin="10,10,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Grid Margin="10">
                             <Grid.RowDefinitions>
@@ -334,30 +324,13 @@
                             <TextBlock Text="(a/6)" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
-
-
-                            <!--GroupBox Margin="10,310,10,10">
-                        <Grid Margin="10,10,10,0" VerticalAlignment="Center">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40" />
-                                <RowDefinition Height="40" />
-                                <RowDefinition Height="40" />
-                                <RowDefinition Height="30" />
-                                <RowDefinition Height="50" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions-->
                             <Separator Margin="0,10,0,10" Grid.ColumnSpan="6" Grid.Row="6"/>
 
 
 
                             <TextBlock Text="조합된 물품" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" Grid.Row="7" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="4" Grid.Row="7"  />
-                            <!--Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/-->
+                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
 
                             <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="8" Grid.Column="0" />
                             <TextBlock Text="재료2" Grid.Row="8" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -372,72 +345,7 @@
                             <Button x:Name="Trash" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" >
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
                             </Button>
-                            <Button x:Name="Submit" Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
-                            <!--/Grid-->
-                        </Grid>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-
-
-            <!--TabItem Header="도감" Foreground="Red" Background="#06223c">
-                <Grid>
-                    <GroupBox Margin="10,10,10,280">
-                        <Grid Margin="10">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <TextBlock Text="재료목록" Margin="10,2,0,0" FontSize="15" Grid.ColumnSpan="2"/>
-                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                            <Separator Margin="10,10,10,10" Grid.ColumnSpan="4" Grid.Row="0"/>
-                            <Image Source="pack://application:,,,/Assets/Trash.jpg" Grid.Column="0" Grid.Row="1"/>
-                            <TextBlock Text="화염정광" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Grid.Row="1" Grid.Column="2" Text="- 설명"/>
-
-                        </Grid>
-                    </GroupBox>
-
-                    <GroupBox Margin="10,270,10,10">
-                        <Grid Margin="10,10,10,0" VerticalAlignment="Center">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="40"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="40"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Separator Margin="10,10,10,10" Grid.ColumnSpan="4" Grid.Row="0"/>
-                            <TextBlock Text="조합된 물품 목록" Margin="10,2,0,0" FontSize="15" Grid.ColumnSpan="2"/>
-                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="2" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                            <TextBlock Text="재료2" Grid.Row="1" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-                            <TextBlock Text="재료3" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-
-
-
-
+                            <Button x:Name="Submit1" Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
                         </Grid>
                     </GroupBox>
                 </Grid>
