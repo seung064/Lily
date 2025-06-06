@@ -118,7 +118,7 @@
                             <ProgressBar Minimum="0" Maximum="100" Value="30" Margin="15" Grid.Row="14" Grid.Column="2" Grid.ColumnSpan="3"/-->
                             <ScrollViewer Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" VerticalScrollBarVisibility="Auto">
                                 <ItemsControl Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="4" ItemsSource="{Binding ProducingItems}">
-                                    
+
                                     <ItemsControl.ItemsPanel>
                                         <ItemsPanelTemplate>
                                             <StackPanel Orientation="Vertical"/>
@@ -146,7 +146,7 @@
                                         </DataTemplate>
                                     </ItemsControl.ItemTemplate>
                                 </ItemsControl>
-                            </ScrollViewer> 
+                            </ScrollViewer>
 
                             <TextBlock Text="{Binding ProducingCountText}" Grid.Column="6" Grid.Row="15" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
@@ -195,70 +195,36 @@
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            
-                            
-                            
-                            <ScrollViewer Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="3" VerticalScrollBarVisibility="Auto">
-                                <ItemsControl Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" ItemsSource="{Binding ProducedItems}">
-                                    <ItemsControl.ItemsPanel>
-                                        <ItemsPanelTemplate>
-                                            <StackPanel Orientation="Vertical"/>
-                                        </ItemsPanelTemplate>
-                                    </ItemsControl.ItemsPanel>
-
-                                    <ItemsControl.ItemTemplate>
-                                        <DataTemplate>
-                                            <Grid Margin="5">
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="*" />
-                                                    <ColumnDefinition Width="*" />
-                                                </Grid.ColumnDefinitions>
-                                                <!--Grid.RowDefinitions>
-                                                <RowDefinition Height="*"/>
-                                                <RowDefinition Height="*"/>
-
-                                            </Grid.RowDefinitions-->
-                                                <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                                <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                            </Grid>
-                                        </DataTemplate>
-                                    </ItemsControl.ItemTemplate>
-                                </ItemsControl>
-                            </ScrollViewer>
 
 
+                            <ListBox ItemsSource="{Binding ProducedItems}"
+                                     SelectionMode="Multiple"
+                                     BorderThickness="0"
+                                     Background="Transparent"
+                                     HorizontalContentAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="6">
 
+
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="5">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Image Source="{Binding ProductionImagePath}" Width="30" Height="30" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding ProductionName}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="1" FontSize="13" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            <TextBlock Text="{Binding ExpirationTime, StringFormat='mm\\:ss'}" Visibility="{Binding IsProduced, Converter={StaticResource BoolToVisibilityConverter}}" Grid.Column="2" Foreground="White" FontSize="13" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
 
 
                             <TextBlock Text="보유 재료" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
                             <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0"/>
-
-                            <!--Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding ProductionName}" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding ProductionItems[0].ExpirationTime, StringFormat='mm\\:ss'}" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
-
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="2" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
-
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="3" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"/>
-
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="재료1" Grid.Row="1" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"/>
-
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="2" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"/>
-
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Grid.Row="3" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="1초" Margin="0,0,0,0" FontSize="18" Grid.Column="6" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="3"/-->
 
                             <Button x:Name="Trash2" Width="30" Height="30" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
