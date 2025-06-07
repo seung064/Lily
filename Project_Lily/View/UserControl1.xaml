@@ -202,7 +202,7 @@
                             </ListBox>
 
 
-                            <TextBlock Text="보유 재료" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
+                            <TextBlock Text="보유 재료" Foreground="White" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
                             <Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0"/>
 
@@ -210,7 +210,7 @@
                                 <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
                             </Button>
                             <Button Command="{Binding CombinationCommand}" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="{Binding ProducedCountText}" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
+                            <TextBlock Text="{Binding ProducedCountText}" Foreground="White" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
 
@@ -218,7 +218,7 @@
 
 
 
-                            <TextBlock Text="조합된 물품" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" Grid.Row="7" VerticalAlignment="Center"/>
+                            <TextBlock Text="조합된 물품" Foreground="White" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" Grid.Row="7" VerticalAlignment="Center"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="10" Grid.Row="7"  />
                             <!--Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/-->
 

@@ -187,7 +187,7 @@ namespace Project_Lily.ViewModels
             { new HashSet<string>{ "발화진주", "바다수정", "플라스크", "진토금" }, "지화탄" },
             { new HashSet<string>{ "용석탄", "청류정수", "풍정석", "암철석" }, "에테르 코어" },
             { new HashSet<string>{ "화염정광", "심해석", "공명결정", "진토금" }, "마그네실" },
-            { new HashSet<string>{ "발화진주", "청류정수", "플라스크", "석기정" }, "천공핵" },
+            { new HashSet<string>{ "발화진주", "청류정수", "플라스크", "석기정" }, "플루오라이트" },
             { new HashSet<string>{ "화염정광", "바다수정", "공명결정", "석기정" }, "제네시움" }
         };
 
@@ -264,7 +264,7 @@ namespace Project_Lily.ViewModels
 
 
             // DB에 저장
-            //ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
+            ProductionItemDB.InsertProduction(item.ProductionName, DateTime.Now, item.Quantity);
 
 
             // 생산 완료시 초기화
@@ -389,49 +389,21 @@ namespace Project_Lily.ViewModels
         [RelayCommand]
         private void Send()
         {
-
-            if (SelectedCombinationItems.Count == 0)
+            if (SelectedCombinationItem == null)
             {
                 MessageBox.Show("보낼 조합품이 없습니다");
                 return;
             }
-            var questMaterialNames = new HashSet<string>(QuestItems.Select(q => q.CombinationName));
-            var selectedNames = new HashSet<string>(SelectedCombinationItems.Select(i => i.ProductionName));
+            
 
-
-            if (!questMaterialNames.SetEquals(selectedNames))
+            if (SelectedCombinationItem != null && QuestItems.Any(q => q.CombinationName == SelectedCombinationItem.CombinationName))
             {
-                MessageBox.Show("퀘스트 재료와 선택한 조합품이 일치하지 않습니다.");
-                return;
+                MessageBox.Show("퀘스트 성공! 결과: " + SelectedCombinationItem.CombinationName);
+                // 성공 처리 코드
             }
-
-            // 퀘스트 재료와 선택한 조합품이 일치하면 조합 규칙 체크
-            foreach (var rule in combinationRules)
+            else
             {
-                if (rule.Key.SetEquals(selectedNames))
-                {
-                    // 조합 성공
-                    var resultItem = rule.Value;
-                    MessageBox.Show($"조합 성공! 결과: {resultItem}");
-
-                    CombinationItems.Add(new CombinationItem
-                    {
-                        CombinationName = resultItem,
-                        CombinationQuantity = 1,
-                        CombinationImagePath = "/Assets/" + imageFileNames[resultItem] + ".png"
-                    });
-
-                    foreach (var item in SelectedProductionItems.ToList())
-                    {
-                        ProducedItems.Remove(item);
-                    }
-
-                    // 퀘스트 완료 처리 (예: 비활성화)
-                    IsQuestActive = false;
-                    QuestItems.Clear();
-
-                    return;
-                }
+                MessageBox.Show("실패!");
             }
         }
         //----
@@ -447,73 +419,26 @@ namespace Project_Lily.ViewModels
                 MessageBox.Show("이미 진행 중인 퀘스트가 있습니다!");
                 return;
             }
-            /*
-            if (Repository.CombinationItems == null || Repository.CombinationItems.Count < 2)
-            {
-                MessageBox.Show("오류");
-                return;
-            }
-            */
+
             Random random = new Random();
             var questItem = Repository.CombinationItems[random.Next(Repository.CombinationItems.Count)];
 
-            // CombinationItems에서 랜덤으로 2개 뽑기
-            var questMaterials = Repository.CombinationItems.OrderBy(x => random.Next()).Take(2).ToList();
+            // CombinationItems에서 랜덤으로 1개 뽑기
+            var questMaterial = Repository.CombinationItems[random.Next(Repository.CombinationItems.Count)];
 
-            // 퀘스트 재료에 랜덤 뽑은 2개 넣기
+            // 퀘스트 재료에 랜덤 뽑은 1개 넣기
             QuestItems.Clear(); // 이전 퀘스트 재료 초기화
-            foreach (var combinationItem in questMaterials)
-            {
-                QuestItems.Add(combinationItem);
-            }
+            QuestItems.Add(questMaterial); // 퀘스트 재료 추가
+
+            SelectedCombinationItem = questMaterial; 
 
             // 퀘스트 활성화
             IsQuestActive = true;
 
             QuestTime = TimeSpan.FromMinutes(10); // 퀘스트 시간 설정 (10분)
             StartQuestTimer();
-
-
         }
-        /*
-        private void AddQuest()
-        {
-
-            var selectedNames = new HashSet<string>(SelectedCombinationItems.Select(x => x.ProductionName));
-
-            foreach (var rule in combinationRules)
-            {
-                if (rule.Key.SetEquals(selectedNames))
-                {
-                    string combinationName = rule.Value;
-
-                    var selected = CombinationItems.OrderBy(x => random.Next()).Take(2).ToList();
-
-
-                    // 이미 등록된 퀘스트인지 확인
-                    if (QuestItems.Any(q => questName == combinationName))
-                    {
-                        MessageBox.Show("이미 등록된 퀘스트입니다.");
-                        return;
-                    }
-
-
-                    QuestItems.Add(new Quest
-                    {
-                        QuestName = combinationName,
-                        QuestCompleted = false
-                    });
-
-                    MessageBox.Show($"'{combinationName}' 를 구해오시오.");
-                    SelectedCombinationItems.Clear();
-                    return;
-                }
-            }
-
-            MessageBox.Show("해당 조합은 등록 가능한 퀘스트가 아닙니다.");
-
-        }
-        */
+        
         //----
 
 
@@ -548,8 +473,5 @@ namespace Project_Lily.ViewModels
                 CombinationItems.Remove(SelectedCombinationItem);
             }
         }
-        
-
-
     }
 }
