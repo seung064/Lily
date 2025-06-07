@@ -17,7 +17,6 @@
     <None Remove="Assets\Login.png" />
     <None Remove="Assets\LoginBGM.mp3" />
     <None Remove="Assets\Silphy.png" />
-    <None Remove="Assets\Sky_Crystal.png" />
     <None Remove="Assets\Theranos.png" />
     <None Remove="Assets\Trash.jpg" />
   </ItemGroup>
@@ -63,7 +62,7 @@
     <Resource Include="Assets\Silphy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\Sky_Crystal.png">
+    <Resource Include="Assets\Skycore_Crystal.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Theranos.png">

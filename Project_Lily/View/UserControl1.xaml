@@ -260,7 +260,7 @@
                             </Button>
                             
                             
-                            <Button x:Name="Submit"  Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
+                            <Button x:Name="Submit"  Command="{Binding SendCommand}" Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
                         </Grid>
                     </GroupBox>
                 </Grid>

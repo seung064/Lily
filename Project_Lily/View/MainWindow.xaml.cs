@@ -17,19 +17,11 @@ namespace Project_Lily.View;
 /// </summary>
 public partial class MainWindow : Window
 {
-    /*
-    private PlanetViewModel1 planet1VM = new();
-    private PlanetViewModel2 planet2VM = new();
-    private PlanetViewModel3 planet3VM = new();
-    private PlanetViewModel4 planet4VM = new();
-    */
 
     public MainWindow()
     {
         InitializeComponent();
     }
-
-    //private ProductionViewModel planetVM = new();
 
     private ProductionViewModel planetVM = new ProductionViewModel();
 
@@ -63,11 +55,11 @@ public partial class MainWindow : Window
         MainGrid.Children.Add(new UserControl5(planetVM));
     }
 
-    /*
+    
     private void ShowUC6_Click(object sender, RoutedEventArgs e)
     {
         MainGrid.Children.Clear();
-        MainGrid.Children.Add(new UserControl6(sharedVM));
+        MainGrid.Children.Add(new UserControl6(planetVM));
     }
-    */
+    
 }
