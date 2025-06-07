@@ -19,11 +19,11 @@ namespace Project_Lily.View
     public partial class UserControl4 : UserControl
     {
 
-        public UserControl4(ProductionViewModel planet3VM)
+        public UserControl4(ProductionViewModel planetVM)
         {
             InitializeComponent();
             //this.DataContext = new TheranosProductionViewModel();  // 뷰모델 연결
-            DataContext = planet3VM;
+            DataContext = planetVM;
         }
     }
 }

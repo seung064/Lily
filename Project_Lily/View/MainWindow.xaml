@@ -17,6 +17,7 @@
             <Button Content="UserControl3" Click="ShowUC3_Click"/>
             <Button Content="UserControl4" Click="ShowUC4_Click"/>
             <Button Content="UserControl5" Click="ShowUC5_Click"/>
+            <Button Content="UserControl6" Click="ShowUC6_Click"/>
             <!--Button Content="UserControl6" Click="ShowUC6_Click"/-->
         </StackPanel>
 

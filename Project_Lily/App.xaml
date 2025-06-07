@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Project_Lily"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-         
+
     </Application.Resources>
 </Application>
