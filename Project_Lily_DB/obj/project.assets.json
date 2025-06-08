@@ -4393,11 +4393,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\Project3\\Project_Lily_DB\\Project_Lily_DB.csproj",
+      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily_DB\\Project_Lily_DB.csproj",
       "projectName": "Project_Lily_DB",
-      "projectPath": "C:\\Users\\gli05\\Desktop\\Project3\\Project_Lily_DB\\Project_Lily_DB.csproj",
+      "projectPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily_DB\\Project_Lily_DB.csproj",
       "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gli05\\Desktop\\Project3\\Project_Lily_DB\\obj\\",
+      "outputPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily_DB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

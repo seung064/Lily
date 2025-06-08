@@ -51,7 +51,7 @@
                 <Separator Margin="10,20,10,0" Grid.ColumnSpan="8" Grid.Row="0" />
                 <Image Source="/Assets/Lily.png" Width="140" Height="140" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
                 <TextBlock Text="제5원소를 만들어낸 고대 기술 문명 행성" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"  Grid.ColumnSpan="5" Margin="10" FontSize="12"/>
-                <TextBlock Text="제4원소의 조합을 통해 만들어진 재료와 &#x0a;제5원소를 활성화할 수 있는 에너지 전송 탑이 존재.&#x0a; 자원들은 이 탑을 통해 실체화 시킬 수 있다." Foreground="White" Height="60" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"  Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="10,0,10,0" FontSize="12"/>
+                <TextBlock Text="제4원소의 조합을 통해 만들어진 재료와 &#x0a;제5원소를 활성화할 수 있는 에너지 전송 탑이 존재.&#x0a;자원들은 이 탑을 통해 실체화 시킬 수 있다." Foreground="White" Height="60" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"  Grid.ColumnSpan="5" Grid.RowSpan="3" Margin="10,0,10,0" FontSize="12"/>
 
 
 
@@ -95,7 +95,7 @@
                 </Button-->
 
 
-                <Button x:Name="Submit"  Command="{Binding AddQuestCommand}" Content="퀘스트 받기" Grid.Column="6" Grid.Row="8" Width="60" Height="30" />
+                <Button x:Name="Submit"  Command="{Binding AddQuestCommand}" Content="퀘스트" Grid.Column="6" Grid.Row="8" Width="100" Height="50" Grid.RowSpan="2" Grid.ColumnSpan="2" />
             </Grid>
         </GroupBox>
     </Grid>
