@@ -16,7 +16,9 @@ namespace Project_Lily.ViewModels
 {
     public partial class ProductionViewModel : ObservableObject
     {
-        
+        //조합 성공
+        public string resultItem;
+
         //생산
         [ObservableProperty]
         private ProductionItem selectedProductionItem;
@@ -210,7 +212,7 @@ namespace Project_Lily.ViewModels
         [RelayCommand]
         private void Production()
         {
-            int currentTotal = ProducingItems.Count + ProducedItems.Count;
+            int currentTotal = ProducingItems.Count + ProducedItems.Count;// 현재 생산 중인 아이템과 생산 완료된 아이템의 총 개수
             if (currentTotal >= 6)
             {
                 MessageBox.Show("더 이상 생산 불가");
@@ -221,8 +223,11 @@ namespace Project_Lily.ViewModels
                 }
                 return;
             }
+            // 생성 하는 아이템 확인
+            //var myitem= SelectedProductionItem.LineNumber;
 
-            
+
+
             for (int i = 0; i < 12; i++)  // 배열/리스트 길이만큼 반복
             {
                 var item = ProductionItems[i];
@@ -241,6 +246,39 @@ namespace Project_Lily.ViewModels
         {
             item.IsExpired = false;
             item.Started = true;
+
+            //item 데이터 받기
+            int selectedItem = item.LineNumber;
+            int myItem=9999;
+            switch (selectedItem)
+            {
+                case 0:
+                case 1:
+                case 2:
+                    myItem = 0; // 암철석, 진토금, 석기정 흑
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                    myItem = 1; // 심해석, 청류정수, 바다수정 물
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    myItem = 2; // 풍정석, 플라스크, 공명결정 바람
+                    break;
+                case 9:
+                case 10:
+                case 11:
+                    myItem = 3; // 화염정광, 용석탄, 발화진주 불
+                    break;
+            }
+            Console.WriteLine(myItem);
+            lock (UnityConnet.lockObject)
+            {
+                UnityConnet.socketData.OreCount = myItem; // 초기화
+                UnityConnet.socketData.Status = SocketDataType.ServerDataProcessed;
+            }
 
             int totalTime = (int)item.ProductionTime.TotalSeconds;
             ProducingItems.Add(item);
@@ -342,23 +380,21 @@ namespace Project_Lily.ViewModels
                 return;
             }
 
-            var selectedNames = new HashSet<string>(SelectedProductionItems.Select(i => i.ProductionName));
+            var selectedNames = new HashSet<string>(SelectedProductionItems.Select(i => i.ProductionName));// 선택된 아이템 이름을 HashSet으로 변환
 
-            foreach (var rule in combinationRules)
+            foreach (var rule in combinationRules)// 조합 규칙을 순회
             {
-                if (rule.Key.SetEquals(selectedNames))
+                if (rule.Key.SetEquals(selectedNames))// 선택된 아이템 이름이 조합 규칙의 키와 일치하는지 확인
                 {
                     // 조합 성공
                     var resultItem = rule.Value;
-                    MessageBox.Show($"조합 성공! 결과: {resultItem}");
-
-                    // 결과 아이템 CombinationItems에 추가
-                    CombinationItems.Add(new CombinationItem
+                    lock (UnityConnet.lockObject)
                     {
-                        CombinationName = resultItem,
-                        CombinationQuantity = 1,
-                        CombinationImagePath = "/Assets/" + imageFileNames[resultItem] +".png"
-                    });
+                        UnityConnet.socketData.CombinationStart = true; // 조합 아이템 이름 설정
+                        UnityConnet.socketData.Status = SocketDataType.ServerDataProcessed; // 서버 데이터 처리 완료 상태로 설정
+                    }
+                    // 조합 성공한 아이템
+                    this.resultItem=rule.Value; // 조합 결과 아이템 이름
 
 
                     foreach (var item in SelectedProductionItems.ToList())
@@ -380,6 +416,20 @@ namespace Project_Lily.ViewModels
             // 실패
             MessageBox.Show("조합 실패!");
         }
+
+        //조합 성공
+        public void OnCombinationSuccess()
+        {
+            MessageBox.Show($"조합 성공! 결과: {resultItem}");
+
+            // 결과 아이템 CombinationItems에 추가
+            CombinationItems.Add(new CombinationItem
+            {
+                CombinationName = resultItem,
+                CombinationQuantity = 1,
+                CombinationImagePath = "/Assets/" + imageFileNames[resultItem] + ".png"
+            });
+        }
         //----
 
 
@@ -400,6 +450,12 @@ namespace Project_Lily.ViewModels
             {
                 MessageBox.Show("퀘스트 성공! 결과: " + SelectedCombinationItem.CombinationName);
                 // 성공 처리 코드
+
+                lock (UnityConnet.lockObject)
+                {
+                    UnityConnet.socketData.Achievement = 0;// 퀘스트 성공 시 소켓 데이터 초기화
+                    UnityConnet.socketData.Status= SocketDataType.ServerDataProcessed;
+                }
             }
             else
             {

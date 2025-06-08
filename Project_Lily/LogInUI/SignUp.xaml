@@ -36,10 +36,10 @@
             <TextBlock Text="이름" Foreground="White"/>
             <TextBox x:Name="NameBox" Height="30" Margin="0,5,0,15" VerticalContentAlignment="Center"/>
 
-            <TextBlock Text="아이디" Foreground="White"/>
+            <TextBlock Text="아이디 (4~12자리의 소문자+숫자 조합만 가능)" Foreground="White"/>
             <TextBox x:Name="IdBox" Height="30" Margin="0,5,0,15" VerticalContentAlignment="Center"/>
 
-            <TextBlock Text="비밀번호" Foreground="White"/>
+            <TextBlock Text="비밀번호 (8자 이상이며 대문자, 소문자, 숫자, 특수문자를 모두 포함해야 합니다)" Foreground="White"/>
             <PasswordBox x:Name="PasswordBox" Height="30" Margin="0,5,0,15" VerticalContentAlignment="Center"/>
 
             <TextBlock Text="생년월일 (YYYY-MM-DD)" Foreground="White"/>

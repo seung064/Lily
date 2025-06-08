@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\gli05\Desktop\Project3\DB\obj\Debug\net8.0-windows8.0\
+C:\Users\김철수\source\repos\seung064\Lily\DB\obj\Debug\net8.0-windows8.0\
 DB
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\gli05\Desktop\Project3\DB\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS8_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS8_0_OR_GREATER;WINDOWS7_0_OR_GREATER
+C:\Users\김철수\source\repos\seung064\Lily\DB\App.xaml
 11407045341
 
 14206155658
-240-455025232
+240-263526234
 MainWindow.xaml;
 
 False

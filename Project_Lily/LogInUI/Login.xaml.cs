@@ -1,5 +1,12 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using Project_Lily.LogInUI;
+using Project_Lily.View;
+using Project_Lily.ViewModels;
+using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.SQLite;
+using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -13,10 +20,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.Win32;
-using Project_Lily.LogInUI;
-using System.Data.SQLite;
-using System.Data.Entity;
 
 namespace Project_Lily
 {
@@ -24,17 +27,18 @@ namespace Project_Lily
     /// Interaction logic for Login.xaml
     /// </summary>
     /// 
-    
+
     public partial class Login : UserControl
     {
         private MainWindow _mainWindow;
+        private ProductionViewModel planetVM = new ProductionViewModel();
 
 
         public Login(MainWindow mainWindow)
         {
             InitializeComponent();
             _mainWindow = mainWindow;
-            
+
         }
 
         private void CheckTables_Click(object sender, RoutedEventArgs e)
@@ -73,7 +77,6 @@ namespace Project_Lily
             _mainWindow.Navigate(new FindPassword(_mainWindow));
             //MessageBox.Show("비밀번호 찾기 기능은 아직 구현되지 않았습니다.");
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string userId = IdTextBox.Text;
@@ -94,7 +97,7 @@ namespace Project_Lily
                         if (reader.Read())
                         {
                             string userType = Convert.ToString(reader["UserType"]) ?? "user";
-
+                            
                             if (userType == "admin")
                             {
                                 // 관리자 전용 화면 이동
@@ -102,8 +105,16 @@ namespace Project_Lily
                             }
                             else
                             {
-                                // 일반 사용자 화면 이동(게임 시작)
-                                _mainWindow.Navigate(new FindPassword(_mainWindow));
+                                // 게임 화면 이동(게임 시작)
+                                //_mainWindow.Navigate(new Project_Lily.View.MainWindow());
+                                _mainWindow.Navigate(new UserControl1(planetVM));
+
+                                //unity exe 프로그램 시작
+                                string path = @"C:\Users\김철수\source\repos\seung064\Lily\Project_Lily\Assets\Unity\SpaceGame.exe";
+                                var process = new Process();
+                                process.StartInfo.FileName = path;
+                                process.StartInfo.UseShellExecute = true; // UseShellExecute를 true로 설정하여 외부 프로그램 실행
+                                process.Start();
                             }
                         }
                         else

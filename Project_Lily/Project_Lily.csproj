@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0-windows8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -15,7 +15,6 @@
     <None Remove="Assets\Inferna.png" />
     <None Remove="Assets\Lily.png" />
     <None Remove="Assets\Login.png" />
-    <None Remove="Assets\LoginBGM.mp3" />
     <None Remove="Assets\Silphy.png" />
     <None Remove="Assets\Theranos.png" />
     <None Remove="Assets\Trash.jpg" />
@@ -24,6 +23,8 @@
   <ItemGroup>
 
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.119" />
 
