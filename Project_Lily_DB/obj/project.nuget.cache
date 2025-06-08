@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "tlwwOSaLRtA=",
   "success": true,
   "projectFilePath": "C:\\Users\\김철수\\source\\repos\\seung064\\Lily\\Project_Lily_DB\\Project_Lily_DB.csproj",
+=======
+  "dgSpecHash": "eC9MtxcdTMc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily_DB\\Project_Lily_DB.csproj",
+>>>>>>> 85a9ffd638fc49a016f8af417d51641359a370fd
   "expectedPackageFiles": [
     "C:\\Users\\김철수\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\김철수\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

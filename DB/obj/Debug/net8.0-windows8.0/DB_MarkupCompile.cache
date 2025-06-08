@@ -4,12 +4,21 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\김철수\source\repos\seung064\Lily\DB\obj\Debug\net8.0-windows8.0\
 DB
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS8_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS8_0_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\김철수\source\repos\seung064\Lily\DB\App.xaml
+=======
+C:\Users\gli05\Desktop\ProjectLily\DB\obj\Debug\net8.0-windows8.0\
+DB
+none
+false
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\gli05\Desktop\ProjectLily\DB\App.xaml
+>>>>>>> 85a9ffd638fc49a016f8af417d51641359a370fd
 11407045341
 
 14206155658

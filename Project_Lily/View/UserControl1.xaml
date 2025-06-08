@@ -271,11 +271,12 @@
 
 
 
-            <!--TabItem Header="도감" Foreground="Red" Background="#06223c">
+            <TabItem Header="도감" Foreground="Red" Background="#06223c">
                 <Grid>
                     <GroupBox Margin="10,10,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                         <Grid Margin="10">
                             <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
@@ -302,55 +303,42 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBlock Text="보유 재료" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
-                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                            <TextBlock Text="목록" Foreground="White" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" VerticalAlignment="Center" Grid.Row="0"/>
                             <Separator Margin="10,20,10,0" Grid.ColumnSpan="6" Grid.Row="0"/>
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="재료1" Grid.Row="1" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="2" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="2" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="3" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="3" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Image Source="pack://application:,,,/Assets/Lily.png" Width="30" Height="30" Grid.Row="1" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <TextBlock Text="재료1" Grid.Row="1" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Grid.Row="2" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="2" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Grid.Row="3" Grid.Column="3" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="재료1" Grid.Row="3" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                            <Button x:Name="Trash1" Width="30" Height="30" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
-                            </Button>
-                            <Button x:Name="Combination" Content="조합" Width="60" Height="30" Grid.Row="5" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="(a/6)" Grid.Row="4" Grid.Column="5" HorizontalAlignment="Center" FontSize="20" Margin="0,0,0,0"/>
 
 
-                            <Separator Margin="0,10,0,10" Grid.ColumnSpan="6" Grid.Row="6"/>
+                            <Image Source="/Assets/Plasma_Heart.png" Width="40" Height="50" Grid.Row="1" />
+                            <TextBlock Text="플라즈마 하트" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 화염정광 + 심해석 + 풍정석 + 암철석" Foreground="White" Grid.Row="2" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
 
+                            <Image Source="/Assets/Skycore_Crystal.png" Width="40" Height="50" Grid.Row="3" />
+                            <TextBlock Text="천공핵" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 용석탄 + 청류정수 + 공명결정 + 석기정" Foreground="White" Grid.Row="4" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
 
+                            <Image Source="/Assets/Geomagma_Capsule.png" Width="40" Height="50" Grid.Row="5" />
+                            <TextBlock Text="지화탄" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="6" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 발화진주 + 바다수정 + 플라스크 + 진토금" Foreground="White" Grid.Row="6" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
 
-                            <TextBlock Text="조합된 물품" Margin="10,0,0,0" FontSize="18" Grid.ColumnSpan="2" Grid.Row="7" VerticalAlignment="Center"/>
-                            <Separator Margin="10,20,10,0" Grid.ColumnSpan="4" Grid.Row="7"  />
-                            <Button Content="X" Width="20" Height="20" Margin="0,0,10,10" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                            <Image Source="/Assets/Aether_Core.png" Width="40" Height="50" Grid.Row="7" />
+                            <TextBlock Text="에테르 코어" Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 용석탄 + 청류정수 + 풍정석 + 암철석" Foreground="White" Grid.Row="8" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
 
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="8" Grid.Column="0" />
-                            <TextBlock Text="재료2" Grid.Row="8" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="9" Grid.Column="0" />
-                            <TextBlock Text="재료3" Grid.Row="9" Grid.Column="1" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="8" Grid.Column="3" />
-                            <TextBlock Text="재료2" Grid.Row="8" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Image Source="pack://application:,,,/Assets/Silphy.png" Width="30" Height="30" Margin="0,0,0,0"  Grid.Row="9" Grid.Column="3" />
-                            <TextBlock Text="재료3" Grid.Row="9" Grid.Column="4" Margin="0,0,0,0" FontSize="15" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <TextBlock Text="(a/4)" Grid.Row="10" Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+                            <Image Source="/Assets/Magnesyl_Alloy.png" Width="40" Height="50" Grid.Row="9" />
+                            <TextBlock Text="마그네실" Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 화염정광 + 심해석 + 공명결정 + 진토금" Foreground="White" Grid.Row="10" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
 
-                            <Button x:Name="Trash" Grid.Row="12" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30" Height="30" Grid.Column="0" >
-                                <Image Source="pack://application:,,,/Assets/Trash.jpg"/>
-                            </Button>
-                            <Button x:Name="Submit1" Content="전송" Grid.Column="6" Grid.Row="12" Width="60" Height="30"/>
+                            <Image Source="/Assets/Fluorite_X.png" Width="40" Height="50" Grid.Row="11" />
+                            <TextBlock Text="플루오라이트" Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20"/>
+                            <TextBlock Text="→ 발화진주 + 청류정수 + 플라스크 + 석기정" Foreground="White" Grid.Row="12" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
+
+                            <Image Source="/Assets/Genesium.png" Width="40" Height="50" Grid.Row="13" />
+                            <TextBlock Text="제네시움" Grid.Row="13" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Foreground="White" FontSize="20" />
+                            <TextBlock Text="→ 화염정광 + 바다수정 + 공명결정 + 석기정" Foreground="White" Grid.Row="14" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Center" FontSize="17" Grid.Column="1"/>
+
                         </Grid>
                     </GroupBox>
                 </Grid>
-            </TabItem-->
-
+            </TabItem>
         </TabControl>
     </Grid>
 </UserControl>
