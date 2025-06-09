@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "ZyVtbir7AG8=",
   "success": true,
   "projectFilePath": "C:\\Users\\김철수\\source\\repos\\seung064\\Lily\\Project_Lily\\Project_Lily.csproj",
-=======
-  "dgSpecHash": "fnDBN/Yq6JQ=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Project_Lily.csproj",
->>>>>>> 85a9ffd638fc49a016f8af417d51641359a370fd
   "expectedPackageFiles": [
     "C:\\Users\\김철수\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\김철수\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

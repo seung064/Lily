@@ -11,13 +11,36 @@
 
   <ItemGroup>
     <None Remove="Assets\Aquarius.png" />
+    <None Remove="Assets\fire.png" />
     <None Remove="Assets\Genesium.png" />
     <None Remove="Assets\Inferna.png" />
     <None Remove="Assets\Lily.png" />
     <None Remove="Assets\Login.png" />
+    <None Remove="Assets\mon.png" />
+    <None Remove="Assets\sand.png" />
     <None Remove="Assets\Silphy.png" />
     <None Remove="Assets\Theranos.png" />
     <None Remove="Assets\Trash.jpg" />
+    <None Remove="Assets\water.png" />
+    <None Remove="Assets\windy.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\fire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\mon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\sand.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\water.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\windy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>

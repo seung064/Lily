@@ -5676,19 +5676,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\김철수\\source\\repos\\seung064\\Lily\\DB\\DB.csproj",
       "projectName": "DB",
       "projectPath": "C:\\Users\\김철수\\source\\repos\\seung064\\Lily\\DB\\DB.csproj",
       "packagesPath": "C:\\Users\\김철수\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\김철수\\source\\repos\\seung064\\Lily\\DB\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj",
-      "projectName": "DB",
-      "projectPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj",
-      "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\obj\\",
->>>>>>> 85a9ffd638fc49a016f8af417d51641359a370fd
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

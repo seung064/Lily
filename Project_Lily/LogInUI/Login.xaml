@@ -49,6 +49,7 @@
                 Foreground="Gray"
                 FontSize="14"
                 IsHitTestVisible="False"
+                
                 Visibility="{Binding Text.IsEmpty, ElementName=IdTextBox, Converter={StaticResource BoolToVisibilityConverter}}"/>
             </Grid>
 

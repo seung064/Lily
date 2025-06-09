@@ -49,8 +49,8 @@
                     <!--Button Content="X" Width="20" Height="20" Margin="10,0,10,0" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center"/-->
 
                     <Separator Margin="10,20,10,0" Grid.ColumnSpan="8" Grid.Row="0" />
-                    <Image Source="/Assets/Lily.png" Width="140" Height="140" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
-                    <TextBlock Text="활화산과 용암 지대가 곳곳에 분포" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"  Grid.ColumnSpan="5" Margin="10" FontSize="12"/>
+                <Image Source="/Assets/fire.png" Width="200" Height="200" Grid.Row="1" Grid.Column="0" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Grid.RowSpan="3"/>
+                <TextBlock Text="활화산과 용암 지대가 곳곳에 분포" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="1" Grid.Column="3"  Grid.ColumnSpan="5" Margin="10" FontSize="12"/>
                     <TextBlock Text="낮은 대기 안정성, 높은 복사열" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="2" Grid.Column="3"  Grid.ColumnSpan="5" Margin="10" FontSize="12"/>
                     <TextBlock Text="강한 자기장과 고온 생물체 서식" Foreground="White" Height="23" VerticalAlignment="Center" Grid.Row="3" Grid.Column="3"  Grid.ColumnSpan="5" Margin="10" FontSize="12"/>
 

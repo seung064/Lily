@@ -47,7 +47,8 @@ namespace Project_Lily.Models
                             {
                                 if (stream.DataAvailable)
                                 {
-                                    json = reader.ReadString();
+                                    lock(lockObject)     
+                                        json = reader.ReadString();
                                 }
                                 else
                                 {
