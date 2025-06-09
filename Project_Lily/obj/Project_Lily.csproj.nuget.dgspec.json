@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Project_Lily.csproj": {}
+    "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\Project_Lily\\Project_Lily.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj": {
+    "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\DB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj",
+        "projectUniqueName": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\DB.csproj",
         "projectName": "DB",
-        "projectPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj",
-        "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\obj\\",
+        "projectPath": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\DB.csproj",
+        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gli05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -98,24 +98,24 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Project_Lily.csproj": {
+    "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\Project_Lily\\Project_Lily.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Project_Lily.csproj",
+        "projectUniqueName": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\Project_Lily\\Project_Lily.csproj",
         "projectName": "Project_Lily",
-        "projectPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Project_Lily.csproj",
-        "packagesPath": "C:\\Users\\gli05\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\obj\\",
+        "projectPath": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\Project_Lily\\Project_Lily.csproj",
+        "packagesPath": "C:\\Users\\frank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\Project_Lily\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gli05\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\frank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -130,8 +130,8 @@
           "net8.0-windows8.0": {
             "targetAlias": "net8.0-windows8.0",
             "projectReferences": {
-              "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj": {
-                "projectPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\DB.csproj"
+              "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\DB.csproj": {
+                "projectPath": "C:\\Users\\frank\\OneDrive\\바탕 화면\\발표 하루 전 종합\\DB\\DB.csproj"
               }
             }
           }
@@ -184,7 +184,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,105 +1,101 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gli05\\Desktop\\ProjectLily\\",
+  "WorkspaceRootPath": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\loginui\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\loginui\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol6.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\viewmodels\\productionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\viewmodels\\productionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\quest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol6.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\combinationitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\combinationitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\combinationitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\productionitemdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\productionitemdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\productionitemdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\productionitemdbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\productionitemdbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\productionitemdbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol5.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol5.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29B4B28B-2C2E-4C92-818B-A8A7F334F3E4}|DB\\DB.csproj|c:\\users\\gli05\\desktop\\projectlily\\db\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29B4B28B-2C2E-4C92-818B-A8A7F334F3E4}|DB\\DB.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\db\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29B4B28B-2C2E-4C92-818B-A8A7F334F3E4}|DB\\DB.csproj|solutionrelative:db\\models\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\models\\productionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\models\\productionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\models\\productionitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol4.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol4.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\gli05\\desktop\\projectlily\\project_lily\\view\\usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|c:\\users\\frank\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\project_lily\\view\\usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{CC15D06F-499A-4C89-9DF8-1B15A09CFAE1}|Project_Lily\\Project_Lily.csproj|solutionrelative:project_lily\\view\\usercontrol2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -110,11 +106,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -122,40 +126,32 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductionViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\ViewModels\\ProductionViewModel.cs",
-              "RelativeDocumentMoniker": "Project_Lily\\ViewModels\\ProductionViewModel.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\ViewModels\\ProductionViewModel.cs*",
-              "RelativeToolTip": "Project_Lily\\ViewModels\\ProductionViewModel.cs*",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAlwJ8AAAApAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\LogInUI\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "Project_Lily\\LogInUI\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\LogInUI\\Login.xaml.cs",
+              "RelativeToolTip": "Project_Lily\\LogInUI\\Login.xaml.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswHQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:26:58.85Z",
+              "WhenOpened": "2025-06-09T05:03:31.787Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserControl6.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl6.xaml",
-              "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl6.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl6.xaml*",
-              "RelativeToolTip": "Project_Lily\\View\\UserControl6.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-06T14:26:55.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "UserControl1.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl1.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl1.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl1.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl1.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl1.xaml",
               "RelativeToolTip": "Project_Lily\\View\\UserControl1.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-04T15:57:54.463Z",
@@ -163,11 +159,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\App.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\App.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\App.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\App.xaml",
               "RelativeToolTip": "Project_Lily\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-07T11:00:15.203Z",
@@ -175,11 +171,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Quest.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\Quest.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\Quest.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\Quest.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\Quest.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\Quest.cs",
               "RelativeToolTip": "Project_Lily\\Models\\Quest.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,11 +183,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\Repository.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\Repository.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\Repository.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\Repository.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\Repository.cs",
               "RelativeToolTip": "Project_Lily\\Models\\Repository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,22 +195,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\MainWindow.xaml",
               "RelativeToolTip": "Project_Lily\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-04T15:57:52.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "UserControl6.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl6.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl6.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl6.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl6.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl6.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl6.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -222,11 +218,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "CombinationItem.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\CombinationItem.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\CombinationItem.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\CombinationItem.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\CombinationItem.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\CombinationItem.cs",
               "RelativeToolTip": "Project_Lily\\Models\\CombinationItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAYwCIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -234,11 +230,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "ProductionItemDB.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItemDB.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItemDB.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\ProductionItemDB.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItemDB.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItemDB.cs",
               "RelativeToolTip": "Project_Lily\\Models\\ProductionItemDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -246,11 +242,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "ProductionItemDBModel.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItemDBModel.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItemDBModel.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\ProductionItemDBModel.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItemDBModel.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItemDBModel.cs",
               "RelativeToolTip": "Project_Lily\\Models\\ProductionItemDBModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -258,11 +254,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\MainWindow.xaml.cs",
               "RelativeToolTip": "Project_Lily\\MainWindow.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -270,22 +266,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\MainWindow.xaml",
               "RelativeToolTip": "Project_Lily\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-07T08:55:11.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\MainWindow.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\MainWindow.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAgwDwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -293,11 +289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "UserControl5.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl5.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl5.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl5.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl5.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl5.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl5.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -305,22 +301,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "UserControl5.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl5.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl5.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl5.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl5.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl5.xaml",
               "RelativeToolTip": "Project_Lily\\View\\UserControl5.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-07T04:42:40.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "Country.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\Models\\Country.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\DB\\Models\\Country.cs",
               "RelativeDocumentMoniker": "DB\\Models\\Country.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\DB\\Models\\Country.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\DB\\Models\\Country.cs",
               "RelativeToolTip": "DB\\Models\\Country.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,11 +324,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "ProductionItem.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItem.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItem.cs",
               "RelativeDocumentMoniker": "Project_Lily\\Models\\ProductionItem.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\Models\\ProductionItem.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\Models\\ProductionItem.cs",
               "RelativeToolTip": "Project_Lily\\Models\\ProductionItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -340,11 +336,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "UserControl1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl1.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl1.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl1.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl1.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl1.xaml.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAjwC4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -352,11 +348,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "UserControl4.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl4.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl4.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl4.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl4.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl4.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl4.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -364,11 +360,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "UserControl3.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl3.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl3.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl3.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl3.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl3.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl3.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -376,11 +372,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "UserControl2.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl2.xaml.cs",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl2.xaml.cs",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl2.xaml.cs",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl2.xaml.cs",
               "RelativeToolTip": "Project_Lily\\View\\UserControl2.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -388,33 +384,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "UserControl4.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl4.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl4.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl4.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl4.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl4.xaml",
               "RelativeToolTip": "Project_Lily\\View\\UserControl4.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-06T08:27:44.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "UserControl3.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl3.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl3.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl3.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl3.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl3.xaml",
               "RelativeToolTip": "Project_Lily\\View\\UserControl3.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-06T07:49:59.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "UserControl2.xaml",
-              "DocumentMoniker": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl2.xaml",
+              "DocumentMoniker": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl2.xaml",
               "RelativeDocumentMoniker": "Project_Lily\\View\\UserControl2.xaml",
-              "ToolTip": "C:\\Users\\gli05\\Desktop\\ProjectLily\\Project_Lily\\View\\UserControl2.xaml",
+              "ToolTip": "C:\\Users\\frank\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uBC1C\uD45C \uD558\uB8E8 \uC804 \uC885\uD569\\Project_Lily\\View\\UserControl2.xaml",
               "RelativeToolTip": "Project_Lily\\View\\UserControl2.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-04T16:51:53.313Z"
