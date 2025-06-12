@@ -1,3 +1,4 @@
 *.resS filter=lfs diff=lfs merge=lfs -text
 Project_Lily/Assets/Unity/SpaceGame_Data/data.unity3d filter=lfs diff=lfs merge=lfs -text
 Project_Lily/Assets/Unity/SpaceGame_Data/sharedassets0.assets.resS filter=lfs diff=lfs merge=lfs -text
+*.unity3d filter=lfs diff=lfs merge=lfs -text
