@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -149,10 +149,6 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Login.xaml.cs",
@@ -162,8 +158,7 @@
               "RelativeToolTip": "Project_Lily\\LogInUI\\Login.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAkwHUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T05:11:19.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T05:11:19.505Z"
             },
             {
               "$type": "Document",
@@ -186,8 +181,7 @@
               "RelativeToolTip": "Project_Lily\\MainWindow.xaml.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAzwDoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T10:12:26.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T10:12:26.584Z"
             },
             {
               "$type": "Document",
@@ -199,8 +193,7 @@
               "RelativeToolTip": "Project_Lily\\ViewModels\\ProductionViewModel.cs",
               "ViewState": "AgIAAHIBAAAAAAAAAAArwI8BAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:26:58.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T03:26:58.85Z"
             },
             {
               "$type": "Document",
@@ -259,8 +252,7 @@
               "RelativeToolTip": "Project_Lily\\Project_Lily.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-08T05:42:46.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T05:42:46.255Z"
             },
             {
               "$type": "Document",
@@ -319,8 +311,7 @@
               "ToolTip": "C:\\Users\\\uAE40\uCCA0\uC218\\source\\repos\\seung064\\Lily\\Project_Lily\\Project_Lily.csproj",
               "RelativeToolTip": "Project_Lily\\Project_Lily.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-08T05:42:49.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T05:42:49.887Z"
             },
             {
               "$type": "Document",
