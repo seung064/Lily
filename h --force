@@ -1,0 +1,70 @@
+* [33mccec7ae[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mAddSocket[m[33m)[m save check
+* [33m749530b[m unity exe rm re-commit exe updata
+* [33m41b4a89[m Add Git LFS tracking for large files in AddSocket branch
+* [33m78bc0b2[m Add Git LFS tracking for large files
+* [33m52d79bb[m unity exe updateTrack large file with LFS
+* [33ma90e676[m unity socket
+*   [33m0dd74bd[m[33m ([m[1;32mDevelop[m[33m)[m save2
+[32m|[m[33m\[m  
+[32m|[m *   [33m85a9ffd[m[33m ([m[1;31morigin/HEAD[m[33m, [m[1;31morigin/Develop[m[33m)[m Merge pull request #7 from seung064/Production
+[32m|[m [34m|[m[35m\[m  
+[32m|[m [34m|[m * [33m0556343[m[33m ([m[1;31morigin/Production[m[33m)[m Feat : 조합품 List(도감) 추가, 유통기한 및 생산시간 조정
+* [34m|[m [35m|[m [33m8fb2209[m save Point
+[34m|[m[34m/[m [35m/[m  
+* [35m|[m [33m5b892e1[m Merge pull request #6 from seung064/Production
+[36m|[m[35m\[m[35m|[m 
+[36m|[m * [33m5c5c3df[m Feat : 퀘스트, 전송(단일전송) 구현
+[36m|[m * [33m219c667[m Update : 버그수정
+[36m|[m * [33me2314bf[m Feat : 조합품 Delete버튼 Command 바인딩
+[36m|[m * [33mb0bc054[m Feat : ProducedItem 사용하여 Combination조합 기능 구현 + 생산된 재료 Delete버튼 Command 바인딩
+[36m|[m * [33mc6c349a[m Update : ProducitonItem 선택을 위해 리스트박스로 교체
+[36m|[m * [33m6b7df54[m Feat : 보유재료, 생산현황 데이터 바인딩 fix
+[36m|[m * [33m5542a3a[m Feat : 보유재료 및 생산현황 카운트 / 최대 카운트 수정 중
+[36m|[m * [33md9628e6[m Feat : 오류 해결 및 생산현황 기능 추가
+[36m|[m[36m/[m  
+*   [33mdf30de7[m Merge pull request #4 from seung064/DBWPF_fix
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m40de8e7[m[33m ([m[1;31morigin/DBWPF_fix[m[33m)[m save
+[1;32m|[m *   [33m0127dcd[m Test save
+[1;32m|[m [1;34m|[m[1;32m\[m  
+[1;32m|[m [1;34m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m   
+* [1;34m|[m [33m72e93f4[m[33m ([m[1;31morigin/KDY[m[33m)[m Add BGM
+* [1;34m|[m [33mb814f1a[m Login 1st Commit
+[1;35m|[m * [33m005740f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/Interface[m[33m, [m[1;31morigin/Developer[m[33m)[m Feat : UI에 자동 저장 구조 구현
+[1;35m|[m * [33mb0e1a29[m Re : Push
+[1;35m|[m * [33m0f756dd[m Refactor : 각 유저컨트롤마다 독립전인 인스턴스를 갖기위해서 구조 개선
+[1;35m|[m * [33m2b7abd8[m Feat : 유통기한 지난 후 DB 자동 삭제 함수 추가
+[1;35m|[m * [33m306b011[m Feat : 생산품을 1개로 제한 / Delete sql문 추가
+[1;35m|[m * [33mfcc71d3[m feat : 생산시 생산 물품 DB에 저장
+[1;35m|[m * [33m839500b[m feat : Production function
+[1;35m|[m * [33m151d816[m update : 유통기한 로직 작성 중
+[1;35m|[m * [33m48e13b0[m feat : 생산 로직 초안 작성(프로그레스바, 타이머)
+[1;35m|[m * [33mef52ca0[m Update : UI이름 수정
+[1;35m|[m * [33m472e870[m feat : 페이지 전환 로직 작성
+[1;35m|[m[1;35m/[m  
+* [33md66fd88[m feat : UI 구조 수정 및 유저컨트롤 수정 중
+* [33mb32507f[m 1
+[1;35m|[m *   [33mba35808[m[33m ([m[1;31morigin/Login[m[33m)[m Merge pull request #2 from seung064/KDY
+[1;35m|[m [1;36m|[m[31m\[m  
+[1;35m|[m [1;36m|[m * [33m24ed2ee[m 1
+[1;35m|[m [1;36m|[m[1;35m/[m  
+[1;35m|[m[1;35m/[m[1;36m|[m   
+* [1;36m|[m [33m1d0232d[m Update : 그리드 수정
+* [1;36m|[m [33m1b671e6[m 1
+* [1;36m|[m [33m6cab8ee[m 커밋오류
+[31m|[m * [33md086656[m Revert "Initial commit"
+[31m|[m * [33m3e77783[m Merge pull request #1 from Beginner0813/DB_WPF
+[31m|[m[31m/[m[33m|[m 
+[31m|[m *   [33m0c1b552[m Merge branch 'seung064:main' into DB_WPF
+[31m|[m [34m|[m[31m\[m  
+[31m|[m [34m|[m[31m/[m  
+[31m|[m[31m/[m[34m|[m   
+* [34m|[m [33m77ebe5a[m Initial commit
+ [34m/[m  
+* [33mc9c8237[m 공유용
+* [33m0b559cf[m feat : WPF UI 예시 작성
+* [33m4540b82[m first DB commit
+* [33m4acb21a[m Add .gitignore and ignore .vs folder
+* [33m53a0f7b[m 1
+* [33ma504f03[m Initial commit
