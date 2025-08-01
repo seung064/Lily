@@ -1,6 +1,6 @@
 # 미니게임 프로젝트
 
-태그:  
+기술 스택:  
 C#, SQLite, Unity, WPF
 
 notion 링크:  
