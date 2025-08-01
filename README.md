@@ -83,7 +83,7 @@ https://www.notion.so/23f86b77e264810891dbfb04143b46ae?source=copy_link
 
 ## <타임라인>
 
-![image.png](image%2016.png)
+![image.png](Assets/image%2016.png)
 
 ## <역할>
 
